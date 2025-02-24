@@ -2,6 +2,25 @@ import requests
 import pandas as pd
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from pandas.tseries.offsets import MonthEnd
+from cryptography.fernet import Fernet
+import base64
+import os
+
+# Generate a key (For security, store and reuse a fixed key)
+key = base64.urlsafe_b64encode(os.urandom(32))  # Simulating a secure key
+cipher_suite = Fernet(key)
+
+# Function to encrypt data
+def encrypt_data(data):
+    """Encrypts the given data string using AES encryption."""
+    encrypted_data = cipher_suite.encrypt(data.encode())
+    return encrypted_data.decode()  # Convert bytes to string
+
+# Function to decrypt data
+def decrypt_data(encrypted_data):
+    """Decrypts the encrypted data string."""
+    decrypted_data = cipher_suite.decrypt(encrypted_data.encode())
+    return decrypted_data.decode()  # Convert bytes to string
 
 # Load the CSV file
 df = pd.read_csv(
@@ -52,31 +71,46 @@ for category in monthly_spending.columns:
 forecast_text = "Predicted spending for next month:\n"
 for category, amount in future_spending.items():
     forecast_text += f"{category}: ${amount:.2f}\n"
-print(forecast_text)
+
+# Encrypt forecast before adding to system prompt
+encrypted_forecast_text = encrypt_data(forecast_text)
 
 system_prompt = (
-    """You are an AI Financial Advisor assistant providing accurate and concise responses for.\n\n"""
-    + forecast_text
+    """You are an AI Financial Advisor assistant providing accurate and concise responses. 
+    We securely handle your financial data to ensure privacy and confidentiality.\n\n"""
+    + decrypt_data(encrypted_forecast_text)  # Decrypt before using in prompt
 )
 
 # LLaMA 3 Chatbot setup
 url = "http://localhost:11434/api/chat"
 
-
 def llama3(conversation_history):
+    """Sends encrypted messages to LLaMA 3 API and decrypts the response."""
+    
+    # Encrypt conversation history before sending
+    encrypted_history = [ 
+        {"role": entry["role"], "content": encrypt_data(entry["content"])} 
+        for entry in conversation_history
+    ]
+    
     data = {
         "model": "llama3",
-        "messages": conversation_history,
+        "messages": encrypted_history,
         "stream": False,
     }
+    
     headers = {"Content-Type": "application/json"}
     response = requests.post(url, headers=headers, json=data)
-    return response.json()["message"]["content"]
 
+    # Decrypt AI response before displaying
+    decrypted_response = decrypt_data(response.json()["message"]["content"])
+    return decrypted_response
 
+# Start conversation
 conversation_history = [{"role": "system", "content": system_prompt}]
 
-print("Welcome to your personal AI financial advisor. Discover your projected monthly spending and gain deeper insights! Type 'exit' to end the conversation.")
+print("Welcome to your personal AI financial advisor. Discover your projected monthly spending and gain deeper insights!")
+print("We securely handle your financial data for privacy and confidentiality. Type 'exit' to end the conversation.")
 
 while True:
     user_prompt = input("You: ")
@@ -84,7 +118,11 @@ while True:
         print("Goodbye!")
         break
 
-    conversation_history.append({"role": "user", "content": user_prompt})
+    # Encrypt user input before sending
+    encrypted_user_prompt = encrypt_data(user_prompt)
+    
+    conversation_history.append({"role": "user", "content": decrypt_data(encrypted_user_prompt)})  # Decrypt before using
+
     response = llama3(conversation_history)
     conversation_history.append({"role": "assistant", "content": response})
     print(f"AI: {response}")
