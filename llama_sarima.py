@@ -3,24 +3,26 @@ import pandas as pd
 from statsmodels.tsa.statespace.sarimax import SARIMAX
 from pandas.tseries.offsets import MonthEnd
 from cryptography.fernet import Fernet
-import base64
-import os
 
-# Generate a key (For security, store and reuse a fixed key)
-key = base64.urlsafe_b64encode(os.urandom(32))  # Simulating a secure key
+# Use a fixed encryption key (store securely in production)
+key = Fernet.generate_key()
 cipher_suite = Fernet(key)
 
 # Function to encrypt data
 def encrypt_data(data):
-    """Encrypts the given data string using AES encryption."""
+    """Encrypts the given data string only if it's not already encrypted."""
+    if isinstance(data, str) and data.startswith("gAAAAA"):  # Fernet encrypted strings start with this prefix
+        return data
     encrypted_data = cipher_suite.encrypt(data.encode())
-    return encrypted_data.decode()  # Convert bytes to string
+    return encrypted_data.decode()
 
 # Function to decrypt data
 def decrypt_data(encrypted_data):
-    """Decrypts the encrypted data string."""
+    """Decrypts the encrypted data string if it's encrypted."""
+    if not isinstance(encrypted_data, str) or not encrypted_data.startswith("gAAAAA"):
+        return encrypted_data  # Return plaintext as-is
     decrypted_data = cipher_suite.decrypt(encrypted_data.encode())
-    return decrypted_data.decode()  # Convert bytes to string
+    return decrypted_data.decode()
 
 # Load the CSV file
 df = pd.read_csv(
@@ -47,7 +49,6 @@ monthly_spending.index = pd.date_range(
     start=monthly_spending.index.min(), periods=len(monthly_spending), freq="MS"
 )
 
-
 # Function to train SARIMA and forecast next month
 def forecast_sarima(data, steps=1):
     model = SARIMAX(
@@ -59,7 +60,6 @@ def forecast_sarima(data, steps=1):
     )
     model_fit = model.fit(disp=False)
     return model_fit.forecast(steps=steps)
-
 
 # Generate forecast
 future_spending = {}
@@ -85,7 +85,7 @@ system_prompt = (
 url = "http://localhost:11434/api/chat"
 
 def llama3(conversation_history):
-    """Sends encrypted messages to LLaMA 3 API and decrypts the response."""
+    """Sends encrypted messages to LLaMA 3 API and gets a response."""
     
     # Encrypt conversation history before sending
     encrypted_history = [ 
@@ -102,9 +102,8 @@ def llama3(conversation_history):
     headers = {"Content-Type": "application/json"}
     response = requests.post(url, headers=headers, json=data)
 
-    # Decrypt AI response before displaying
-    decrypted_response = decrypt_data(response.json()["message"]["content"])
-    return decrypted_response
+    # AI responses are NOT encrypted, so return them directly
+    return response.json().get("message", {}).get("content", "Error: No response received.")
 
 # Start conversation
 conversation_history = [{"role": "system", "content": system_prompt}]
@@ -118,7 +117,7 @@ while True:
         print("Goodbye!")
         break
 
-    # Encrypt user input before sending
+    # Encrypt user input before storing but decrypt before sending to AI
     encrypted_user_prompt = encrypt_data(user_prompt)
     
     conversation_history.append({"role": "user", "content": decrypt_data(encrypted_user_prompt)})  # Decrypt before using
