@@ -5,7 +5,7 @@ from pandas.tseries.offsets import MonthEnd
 
 # Load the CSV file
 df = pd.read_csv(
-    "/Users/vidyakalyandurg/Desktop/FinFluent/synthetic_bank_statements_user_5y1.csv",
+    "/Users/vidyakalyandurg/Desktop/FinFluent/sorted_transactions.csv",
     parse_dates=["Date"],
 )
 
@@ -49,13 +49,13 @@ for category in monthly_spending.columns:
     future_spending[category] = forecast.iloc[0]
 
 # Generate system prompt with forecasted spending
-forecast_text = "Predicted spending for next month:\n"
+forecast_text = "You are given information on a user's predicted spending for next month:\n"
 for category, amount in future_spending.items():
     forecast_text += f"{category}: ${amount:.2f}\n"
-print(forecast_text)
+# print(forecast_text)
 
 system_prompt = (
-    """You are an AI Financial Advisor assistant providing accurate and concise responses for.\n\n"""
+    """You are an AI Financial Advisor assistant providing accurate and concise responses.\n\n"""
     + forecast_text
 )
 
@@ -76,7 +76,7 @@ def llama3(conversation_history):
 
 conversation_history = [{"role": "system", "content": system_prompt}]
 
-print("Welcome to your personal AI financial advisor. Discover your projected monthly spending and gain deeper insights! Type 'exit' to end the conversation.")
+print("Welcome to your personal AI financial advisor.\nDiscover your projected monthly spending and gain deeper insights!\nWhat can I help you with today?\n[Type 'exit' to end the conversation]")
 
 while True:
     user_prompt = input("You: ")
@@ -87,4 +87,4 @@ while True:
     conversation_history.append({"role": "user", "content": user_prompt})
     response = llama3(conversation_history)
     conversation_history.append({"role": "assistant", "content": response})
-    print(f"AI: {response}")
+    print(f"FinFluent: {response}")
