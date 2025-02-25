@@ -34,7 +34,7 @@ def llama3(conversation_history):
 # Initialize conversation history with updated system prompt
 conversation_history = [{"role": "system", "content": system_prompt}]
 
-print("AI Financial Advisor Chatbot. Type 'exit' to end the conversation.")
+print("Welcome to your personal AI financial advisor.Get real time stock predictions and uncover valuable insights!\nWhat can I help you with today?\n[We securely handle your financial data to ensure privacy and confidentiality]\n[Type 'exit' to end the conversation]")
 
 while True:
     user_prompt = input("You: ")

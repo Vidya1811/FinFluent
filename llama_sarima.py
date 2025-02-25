@@ -55,7 +55,8 @@ for category, amount in future_spending.items():
 # print(forecast_text)
 
 system_prompt = (
-    """You are an AI Financial Advisor assistant providing accurate and concise responses.\n\n"""
+    """You are an AI Financial Advisor assistant providing accurate and concise responses. Be specific and answer with numbers.\n\n
+    User Salary: $10,000 per month"""
     + forecast_text
 )
 
@@ -76,7 +77,7 @@ def llama3(conversation_history):
 
 conversation_history = [{"role": "system", "content": system_prompt}]
 
-print("Welcome to your personal AI financial advisor.\nDiscover your projected monthly spending and gain deeper insights!\nWhat can I help you with today?\n[Type 'exit' to end the conversation]")
+print("Welcome to your personal AI financial advisor.\nDiscover your projected monthly spending and gain deeper insights!\nWhat can I help you with today?\n[We securely handle your financial data to ensure privacy and confidentiality]\n[Type 'exit' to end the conversation]")
 
 while True:
     user_prompt = input("You: ")
