@@ -9,18 +9,16 @@ class AnalysisPrompt:
         url_site = []
         for i, source in enumerate(sources):
             format_sources += (
-                f"Source {i}: {source["url"]}\n Content: {source["content"]} \n"
+                f"Sentiment: {source.get('sentiment_label')} ({source.get('sentiment_score')})\n"
+                f"Content: {source['content']} \n\n"
             )
-            url_site.append(source["url"])
 
         self.prompt = """
-            You are a financial analyst specializing in stock market analysis. You are tasked with summarizing and analyzing a specific stock and providing a sentiment analysis based on given sources. 
-            Cite the source after the sentence in markdown format. eg. [source](url). Make sure the generated response is in markdown format so double check all special tokens.
-
+            You are a financial analyst specializing in stock market analysis. You are tasked with summarizing and analyzing a specific stock and providing a sentiment analysis based on given sources
+            Sentiment_score_definition: x <= -0.35: Bearish; -0.35 < x <= -0.15: Somewhat-Bearish; -0.15 < x < 0.15: Neutral; 0.15 <= x < 0.35: Somewhat_Bullish; x >= 0.35: Bullish,
             stock symbol: {ticker}
-            url to site sources: {url_site}
-            {sources}
             Current Price is {current_price}
+            Relavant News: {sources}
 
             **Example Format Response:**
             ---
@@ -67,11 +65,30 @@ class AnalysisAgent:
         prompt = AnalysisPrompt(
             ticker=ticker, current_price=current_price, sources=sources
         )
-        res = requests.post(
-            LLM_SERVICE_URL + "/generate", json={"content": prompt.prompt}
-        )
-        analysis = res.json()
-        return analysis["content"]
+
+        # 🖨️ DEBUG: Show input to LLM
+        print("\n🧠 Prompt being sent to LLM:\n")
+        print(
+            prompt.prompt[:1000] + "...\n"
+        )  # Print only first 1000 chars to avoid overload
+
+        try:
+            res = requests.post(
+                LLM_SERVICE_URL + "/generate", json={"content": prompt.prompt}
+            )
+            res.raise_for_status()
+            analysis = res.json()
+
+            # 🖨️ DEBUG: Show response from LLM
+            print("\n📬 Response from LLM:\n")
+            print(analysis.get("content", "[No content returned]")[:1000] + "...\n")
+
+            return analysis["content"]
+
+        except requests.exceptions.RequestException as e:
+            print(f"\n❌ LLM request failed: {e}")
+            print("Response content:", res.text if res else "[No response]")
+            return "[Error: LLM generation failed]"
 
     def run(self, data: dict):
         analysis = self.get_analysis(
