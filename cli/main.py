@@ -23,7 +23,7 @@ def main():
         print(f"[Controller] Routed to agent: {route}")
 
         if route == "budget":
-            response = run_budget_agent("data/sample_transactions.csv")
+            response = run_budget_agent("/Users/vidyakalyandurg/Desktop/FinFluent/user_1.csv")
         elif route == "anomaly":
             response = run_anomaly_agent("data/sample_transactions.csv")
         elif route == "stock":
