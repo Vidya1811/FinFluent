@@ -6,6 +6,8 @@ from controller.central_controller import route_user_query
 from agents.budget_agent import run_budget_agent_loop
 from agents.anomaly_agent import run_anomaly_agent_loop
 from agents.stock_agent import run_stock_agent_loop
+from agents.portfolio_agent import run_portfolio_agent_loop
+
 
 
 def main():
@@ -38,9 +40,12 @@ How can I help you today?
         elif route == "stock":
             run_stock_agent_loop()
             response = None  
+        elif route == "portfolio":
+            run_portfolio_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/sample_portfolio.csv")
+            response = None
 
         else:
-            response = "Sorry, I didn't understand. Please ask about your budget, anomalies, or stocks."
+            response = "Sorry, I didn't understand. Please ask about your budget, anomalies, stocks, or portfolio analysis."
 
         if response:
             print(f"\n{response}\n")
