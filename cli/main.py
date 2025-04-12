@@ -3,9 +3,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from controller.central_controller import route_user_query
-from agents.budget_agent import run_budget_agent
-from agents.anomaly_agent import run_anomaly_agent
-from agents.stock_agent import run_stock_agent
+from agents.budget_agent import run_budget_agent_loop
+from agents.anomaly_agent import run_anomaly_agent_loop
+from agents.stock_agent import run_stock_agent_loop
 
 
 def main():
@@ -23,24 +23,20 @@ def main():
         print(f"[Controller] Routed to agent: {route}")
 
         if route == "budget":
-            response = run_budget_agent("/Users/vidyakalyandurg/Desktop/FinFluent/user_1.csv")
+            run_budget_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/user_1.csv")
+            response = None
         elif route == "anomaly":
-            response = run_anomaly_agent("data/sample_transactions.csv")
+            run_anomaly_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/user_1.csv")
+            response = None
         elif route == "stock":
-            # crude ticker detection (refine later)
-            ticker = next(
-                (
-                    word
-                    for word in user_input.split()
-                    if word.isupper() and 2 <= len(word) <= 5
-                ),
-                "AAPL",
-            )
-            response = run_stock_agent(ticker)
+            run_stock_agent_loop()
+            response = None  
+
         else:
             response = "Sorry, I didn't understand. Please ask about your budget, anomalies, or stocks."
 
-        print(f"\n{response}\n")
+        if response:
+            print(f"\n{response}\n")
 
 
 if __name__ == "__main__":
