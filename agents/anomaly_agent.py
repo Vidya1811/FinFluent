@@ -4,77 +4,9 @@ import pandas as pd
 import requests
 
 
-# def run_anomaly_agent(transactions_path: str) -> str:
-#     # 1. Load and filter data
-#     df = pd.read_csv(transactions_path)
-#     df_debit = df[df["Transaction Type"].str.lower() == "debit"].copy()
-
-#     if df_debit.empty or "Amount" not in df_debit.columns:
-#         return (
-#             "❌ No debit transactions found or missing 'Amount' column in the dataset."
-#         )
-
-#     # 2. Standardize transaction amounts
-#     scaler = StandardScaler()
-#     df_debit["Amount_scaled"] = scaler.fit_transform(df_debit[["Amount"]])
-
-#     # 3. Run Isolation Forest
-#     model = IsolationForest(n_estimators=100, contamination=0.01, random_state=42)
-#     df_debit["outlier_flag"] = model.fit_predict(df_debit[["Amount_scaled"]])
-#     df_debit["is_outlier"] = df_debit["outlier_flag"] == -1
-
-#     # 4. Filter outliers and format results
-#     outliers = df_debit[df_debit["is_outlier"]].sort_values(
-#         by="Amount", ascending=False
-#     )
-#     if outliers.empty:
-#         return "✅ No major spending anomalies detected this month. You're all good!"
-
-#     # 5. Create insight prompt
-#     outlier_summary = ""
-#     for _, row in outliers.head(5).iterrows():
-#         outlier_summary += f"- {row['Date']}: ${row['Amount']:.2f} for {row['Category']} ({row['Description']})\n"
-
-#     prompt = f"""
-# You're a smart financial assistant. Below are unusual debit transactions detected by an Isolation Forest algorithm.
-
-# ## Detected Anomalies:
-# {outlier_summary}
-
-# ## Instructions:
-# 1. Summarize the potential concerns in a friendly tone.
-# 2. Mention if these seem risky or need user attention.
-# 3. Suggest follow-up steps or questions to ask the user.
-# """
-
-#     # 6. Query LLaMA 3 via Ollama
-#     res = requests.post(
-#         "http://localhost:11434/api/chat",
-#         json={
-#             "model": "llama3",
-#             "messages": [
-#                 {"role": "system", "content": prompt},
-#                 {
-#                     "role": "user",
-#                     "content": "Please analyze these transactions and tell me what's unusual.",
-#                 },
-#             ],
-#             "stream": False,
-#         },
-#         headers={"Content-Type": "application/json"},
-#     )
-
-#     return res.json()["message"]["content"]
-
-
-from sklearn.ensemble import IsolationForest
-from sklearn.preprocessing import StandardScaler
-import pandas as pd
-import requests
-
 def run_anomaly_agent_loop(transactions_path: str):
     print("\n🚨 Entering Anomaly Detection Mode")
-    print("We've scanned your debit transactions for unusual spending.")
+    print("I've scanned your debit transactions for unusual spending.")
     print("Ask about any transaction, category, or pattern. Type 'exit' to return.\n")
 
     # 1. Load and filter data
