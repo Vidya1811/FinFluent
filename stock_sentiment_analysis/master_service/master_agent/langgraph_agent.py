@@ -1,6 +1,8 @@
-from master_agent.agents.alpha_vantage_agent import AlphaVantageNewsAgent  
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../..")))
+from .agents.alpha_vantage_agent import AlphaVantageNewsAgent
 from .agents import PriceAgent, AnalysisAgent
-
 
 
 class MasterAgent:
