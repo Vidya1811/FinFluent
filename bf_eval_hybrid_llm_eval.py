@@ -9,7 +9,7 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error
 from pmdarima import auto_arima
 from prophet import Prophet
 import numpy as np
-
+from rouge_score import rouge_scorer
 
 
 reference_answers = {
@@ -207,6 +207,16 @@ while True:
         print(f" BLEU Score: {bleu:.4f}")
     else:
         print(" No reference available for BLEU evaluation.")
+
+
+# ----- ROUGE Evaluation -----
+    scorer = rouge_scorer.RougeScorer(["rouge1", "rougeL"], use_stemmer=True)
+
+    if ref_text:
+        rouge_scores = scorer.score(ref_text, response)
+        print(f"🔴 ROUGE-1 ➜ Precision: {rouge_scores['rouge1'].precision:.4f}, Recall: {rouge_scores['rouge1'].recall:.4f}, F1: {rouge_scores['rouge1'].fmeasure:.4f}")
+        print(f"🔴 ROUGE-L ➜ Precision: {rouge_scores['rougeL'].precision:.4f}, Recall: {rouge_scores['rougeL'].recall:.4f}, F1: {rouge_scores['rougeL'].fmeasure:.4f}")
+
 
 
 
