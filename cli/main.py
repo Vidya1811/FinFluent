@@ -9,7 +9,6 @@ from agents.stock_agent import run_stock_agent_loop
 from agents.portfolio_agent import run_portfolio_agent_loop
 
 
-
 def main():
     print("""👋 Welcome to FinFluent - your personal, AI-powered financial advisor!
           
@@ -17,6 +16,7 @@ Here's what I can do:
 🔮 Budget Forecasting — See where your money is headed next month  
 🚨 Anomaly Detection — Spot unusual or suspicious transactions  
 📈 Stock Sentiment — Get the latest trends and news on your favorite stocks
+📊 Portfolio Review - Get insights on your stock portfolio 
           
 How can I help you today?
 """)
@@ -32,16 +32,16 @@ How can I help you today?
         print(f"Connecting you to a specialist: {route}")
 
         if route == "budget":
-            run_budget_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/user_1.csv")
+            run_budget_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/data/user_1.csv")
             response = None
         elif route == "anomaly":
-            run_anomaly_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/user_1.csv")
+            run_anomaly_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/data/user_1.csv")
             response = None
         elif route == "stock":
             run_stock_agent_loop()
-            response = None  
+            response = None
         elif route == "portfolio":
-            run_portfolio_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/sample_portfolio.csv")
+            run_portfolio_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/data/sample_portfolio.csv")
             response = None
 
         else:
