@@ -8,6 +8,7 @@ try:
 except ImportError:
     st = None
 
+
 def forecast_sarima(data, steps=1):
     model = SARIMAX(
         data,
@@ -18,6 +19,7 @@ def forecast_sarima(data, steps=1):
     )
     model_fit = model.fit(disp=False)
     return model_fit.forecast(steps=steps)
+
 
 def run_budget_agent_loop(transactions_path: str, streamlit_mode=False):
     import streamlit as st  # safe for dual use
@@ -30,13 +32,21 @@ def run_budget_agent_loop(transactions_path: str, streamlit_mode=False):
         # Load and clean data
         df = pd.read_csv(transactions_path, parse_dates=["Date"])
         debit_categories = {
-            "Shopping", "Entertainment", "Restaurants", "Travel expenses",
-            "Mortgage & Rent", "Grocery shopping", "Utilities", "Heating fuel"
+            "Shopping",
+            "Entertainment",
+            "Restaurants",
+            "Travel expenses",
+            "Mortgage & Rent",
+            "Grocery shopping",
+            "Utilities",
+            "Heating fuel",
         }
         df = df[df["Category"].isin(debit_categories)]
         df["Amount"] = df["Amount"].abs()
         df["Month"] = (df["Date"] + MonthEnd(0)).dt.to_period("M").dt.to_timestamp()
-        monthly_spending = df.groupby(["Month", "Category"])["Amount"].sum().unstack().fillna(0)
+        monthly_spending = (
+            df.groupby(["Month", "Category"])["Amount"].sum().unstack().fillna(0)
+        )
         monthly_spending.index = pd.date_range(
             start=monthly_spending.index.min(), periods=len(monthly_spending), freq="MS"
         )
@@ -68,7 +78,12 @@ You are an AI-powered Financial Advisor. Your job is to provide accurate, data-d
 """
 
         memory.append({"role": "system", "content": system_prompt})
-        memory.append({"role": "user", "content": "Please analyze my forecast and offer suggestions."})
+        memory.append(
+            {
+                "role": "user",
+                "content": "Please analyze my forecast and offer suggestions.",
+            }
+        )
 
         # Initial response
         res = requests.post(

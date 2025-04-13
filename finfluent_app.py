@@ -10,7 +10,9 @@ from agents.portfolio_agent import run_portfolio_agent_loop
 # Default fallback CSV paths
 DEFAULT_BUDGET_PATH = "/Users/vidyakalyandurg/Desktop/FinFluent/data/user_1.csv"
 DEFAULT_ANOMALY_PATH = "/Users/vidyakalyandurg/Desktop/FinFluent/data/user_1.csv"
-DEFAULT_PORTFOLIO_PATH = "/Users/vidyakalyandurg/Desktop/FinFluent/data/sample_portfolio.csv"
+DEFAULT_PORTFOLIO_PATH = (
+    "/Users/vidyakalyandurg/Desktop/FinFluent/data/sample_portfolio.csv"
+)
 
 # 🌐 Streamlit config
 st.set_page_config(page_title="FinFluent", layout="wide")
@@ -18,9 +20,10 @@ st.title("💰 FinFluent - Your AI Financial Advisor")
 
 # 🧠 Session state initialization
 if "messages" not in st.session_state:
-    st.session_state.messages = [{
-        "role": "assistant",
-        "content": """👋 Welcome to **FinFluent**!
+    st.session_state.messages = [
+        {
+            "role": "assistant",
+            "content": """👋 Welcome to **FinFluent**!
 
 Here’s what I can do:
 
@@ -30,8 +33,9 @@ Here’s what I can do:
 📊 **Portfolio Review** — Analyze your current holdings
 
 You can also upload your own files below 👇
-"""
-    }]
+""",
+        }
+    ]
 
 if "active_agent" not in st.session_state:
     st.session_state.active_agent = None
@@ -41,7 +45,7 @@ if "agent_conversations" not in st.session_state:
         "budget": [],
         "anomaly": [],
         "stock": [],
-        "portfolio": []
+        "portfolio": [],
     }
 
 # ==============================
@@ -58,7 +62,9 @@ for msg in st.session_state.messages:
 
 st.markdown("#### 📁 **Upload your files here:**")
 
-budget_file = st.file_uploader("📄 Upload your bank statement (used for Budget + Anomaly)", type=["csv"])
+budget_file = st.file_uploader(
+    "📄 Upload your bank statement (used for Budget + Anomaly)", type=["csv"]
+)
 portfolio_file = st.file_uploader("📊 Upload your stock portfolio CSV", type=["csv"])
 
 # Handle budget/anomaly upload
@@ -87,6 +93,7 @@ else:
 # 🚦 Routing logic
 # ==============================
 
+
 def get_active_agent_response(agent, message):
     st.session_state.current_input = message
 
@@ -100,6 +107,7 @@ def get_active_agent_response(agent, message):
         return run_portfolio_agent_loop(PORTFOLIO_DATA_PATH, streamlit_mode=True)
     return "❌ Unknown agent"
 
+
 # ==============================
 # 💬 Chat input
 # ==============================
@@ -109,7 +117,7 @@ user_input = st.chat_input("Ask about your finances... [type 'back' to exit agen
 # 🛡️ Trust message
 st.markdown(
     "<div style='margin-top: -10px; font-size: 0.85rem; color: gray;'>🔐 We ensure end-to-end encryption. Your data is safe with us.</div>",
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
 )
 
 
@@ -125,7 +133,9 @@ if user_input:
             agent = st.session_state.active_agent
             st.session_state.agent_conversations[agent] = []
             st.session_state.active_agent = None
-            response = "👋 You’ve exited the current agent. Ask anything to begin again."
+            response = (
+                "👋 You’ve exited the current agent. Ask anything to begin again."
+            )
         else:
             agent = st.session_state.active_agent
             if agent is None:
@@ -136,7 +146,9 @@ if user_input:
             try:
                 response = get_active_agent_response(agent, user_input)
             except Exception as e:
-                response = f"❌ An error occurred while processing your request.\n\n```{e}```"
+                response = (
+                    f"❌ An error occurred while processing your request.\n\n```{e}```"
+                )
 
         st.markdown(response)
         st.session_state.messages.append({"role": "assistant", "content": response})

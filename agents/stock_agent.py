@@ -7,6 +7,7 @@ try:
 except ImportError:
     st = None  # CLI-safe
 
+
 def run_stock_agent_loop(streamlit_mode=False):
     if streamlit_mode and st:
         memory = st.session_state.agent_conversations["stock"]
@@ -32,7 +33,11 @@ def run_stock_agent_loop(streamlit_mode=False):
 
         # Parse ticker
         ticker = next(
-            (word for word in user_input.split() if word.isupper() and 2 <= len(word) <= 5),
+            (
+                word
+                for word in user_input.split()
+                if word.isupper() and 2 <= len(word) <= 5
+            ),
             None,
         )
 
@@ -41,7 +46,12 @@ def run_stock_agent_loop(streamlit_mode=False):
 
         try:
             output = subprocess.check_output(
-                ["python3", "stock_sentiment_analysis/run_analysis.py", "--ticker", ticker],
+                [
+                    "python3",
+                    "stock_sentiment_analysis/run_analysis.py",
+                    "--ticker",
+                    ticker,
+                ],
                 stderr=subprocess.STDOUT,
             )
             response = output.decode("utf-8")
@@ -64,7 +74,11 @@ def run_stock_agent_loop(streamlit_mode=False):
                 break
 
             ticker = next(
-                (word for word in user_input.split() if word.isupper() and 2 <= len(word) <= 5),
+                (
+                    word
+                    for word in user_input.split()
+                    if word.isupper() and 2 <= len(word) <= 5
+                ),
                 None,
             )
 
@@ -74,11 +88,18 @@ def run_stock_agent_loop(streamlit_mode=False):
 
             try:
                 output = subprocess.check_output(
-                    ["python3", "stock_sentiment_analysis/run_analysis.py", "--ticker", ticker],
+                    [
+                        "python3",
+                        "stock_sentiment_analysis/run_analysis.py",
+                        "--ticker",
+                        ticker,
+                    ],
                     stderr=subprocess.STDOUT,
                 )
                 print(output.decode("utf-8"))
             except subprocess.CalledProcessError as e:
                 print("❌ Stock analysis failed.")
                 print(f"Command: {e.cmd}")
-                print(f"Output:\n{e.output.decode('utf-8') if e.output else 'No output'}")
+                print(
+                    f"Output:\n{e.output.decode('utf-8') if e.output else 'No output'}"
+                )
