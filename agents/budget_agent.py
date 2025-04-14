@@ -6,18 +6,19 @@ from cryptography.fernet import Fernet
 import sys
 import os
 
-desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+# desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
 
 
 def decrypt_user_files(file_name: str, user_name: str, key: bytes) -> str:
     cipher = Fernet(key)
-    fldr_name = "stock_market"
-    decrypted_file_path = "decrypted_data/"  # add slash at end of file path
-    with open("secret.key", "wb") as key_file:
-        key_file.write(key)
-
+    # fldr_name = "stock_market"
+    # decrypted_file_path = "decrypted_data/"  # add slash at end of file path
+    # with open("secret.key", "wb") as key_file:
+    #   key_file.write(key)
+    
     encrypted_file_path = "FinFluent\\encrypted_files\\"  # add slash at end of file path
-    encryp_path = os.path.join(desktop_path, fldr_name, encrypted_file_path, user_name, file_name)
+    # encryp_path = os.path.join(desktop_path, fldr_name, encrypted_file_path, user_name, file_name)
+    encryp_path = encrypted_file_path + user_name + file_name
 
     # Encrypt the CSV file
     with open(encryp_path, "rb") as f:
@@ -25,7 +26,8 @@ def decrypt_user_files(file_name: str, user_name: str, key: bytes) -> str:
 
     decrypted_data = cipher.decrypt(data)
     decrypted_file_path = "FinFluent\\decrypted_files\\"  # add slash at end of file path
-    decryp_path = os.path.join(desktop_path, fldr_name, decrypted_file_path, user_name, file_name)
+    # decryp_path = os.path.join(desktop_path, fldr_name, decrypted_file_path, user_name, file_name)
+    decryp_path = decrypted_file_path + user_name + file_name
 
     with open(decryp_path, "wb") as f:
         f.write(decrypted_data)
@@ -112,22 +114,14 @@ def forecast_sarima(data, steps=1):
 
 #     return res.json()["message"]["content"]
 
-def encrypt_string(string, key):
-    cipher = Fernet(key)
-    encrypted_string = cipher.encrypt(string.encode())
-    return encrypted_string
 
-def decrypt_string(encrypted_string, key):
-    cipher = Fernet(key)
-    decrypted_string = cipher.decrypt(encrypted_string).decode()
-    return decrypted_string
-
-def run_budget_agent_loop(transactions_path: str, key: bytes) -> None:
+def run_budget_agent_loop(transactions_path_enc: str, key: bytes) -> None:
     print("\n💰 Entering Budget Forecast Mode")
     print(
         "Ask follow-up questions about your spending forecast, categories, or ways to save."
     )
     print("Type 'exit' to return to the FinFluent main menu.\n")
+    transactions_path = decrypt_user_files(transactions_path_enc, "user_1", key)
 
     # 1. Load and clean data
     df = pd.read_csv(transactions_path, parse_dates=["Date"])

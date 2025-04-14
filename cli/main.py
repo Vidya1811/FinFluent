@@ -10,24 +10,27 @@ from agents.stock_agent import run_stock_agent_loop
 from agents.portfolio_agent import run_portfolio_agent_loop
 
 
-desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
+#desktop_path = os.path.join(os.path.expanduser("~"), "Desktop")
 fldr_name = "stock_market"
 file_path = "FinFluent\\user_data\\"  # add slash at end of file path
 
 
 def encryption_agent(file_name: str, user_name: str, key: bytes) -> str:
-    fldr_name = "stock_market"
+    # fldr_name = "stock_market"
     with open("secret.key", "wb") as key_file:
         key_file.write(key)
+
+    with open("secret.key", "rb") as f:
+        key = f.read()
 
     cipher = Fernet(key)
 
     file_path = "FinFluent\\user_data\\"  # add slash at end of file path
-    file_name = file_name
-    user_name = user_name
-    orig_path = os.path.join(desktop_path, fldr_name, file_path, user_name, file_name)
+    file_name = file_name  # 5_year.csv
+    user_name = user_name  # user_1
+    orig_path = file_path + user_name + "\\" + file_name
     encrypted_file_path = "FinFluent\\encrypted_files\\"  # add slash at end of file path
-    encryp_path = os.path.join(desktop_path, fldr_name, encrypted_file_path, user_name, file_name)
+    encryp_path = encrypted_file_path + user_name + "\\" + file_name
 
     # Encrypt the CSV file
     with open(orig_path, "rb") as f:
@@ -64,18 +67,15 @@ How can I help you today?
         print(f"Connecting you to a specialist: {route}")
 
         if route == "budget":
-            key = Fernet.generate_key()
             run_budget_agent_loop(encrypted_data_5, key)
             response = None
         elif route == "anomaly":
-            key = Fernet.generate_key()
             run_anomaly_agent_loop("encrypted_data_5", key)
             response = None
         elif route == "stock":
             run_stock_agent_loop()
             response = None  
         elif route == "portfolio":
-            key = Fernet.generate_key()
             run_portfolio_agent_loop(encrypted_data_portfolio, key)
             response = None
 
