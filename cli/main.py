@@ -32,14 +32,14 @@ How can I help you today?
         print(f"Connecting you to a specialist: {route}")
 
         if route == "budget":
-            run_budget_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/data/user_1.csv")
+            run_budget_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/user_3.csv")
             response = None
         elif route == "anomaly":
             run_anomaly_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/data/user_1.csv")
             response = None
         elif route == "stock":
             run_stock_agent_loop()
-            response = None
+            response = None  
         elif route == "portfolio":
             run_portfolio_agent_loop("/Users/vidyakalyandurg/Desktop/FinFluent/data/sample_portfolio.csv")
             response = None

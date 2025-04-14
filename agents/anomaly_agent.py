@@ -6,27 +6,31 @@ import requests
 try:
     import streamlit as st
 except ImportError:
-    st = None  # Allow CLI use
+    st = None  # For CLI
 
 
 def run_anomaly_agent_loop(transactions_path: str, streamlit_mode=False):
-    # For Streamlit: use session memory
+    # Memory setup
     if streamlit_mode and st:
+        if "agent_conversations" not in st.session_state:
+            st.session_state.agent_conversations = {}
+        if "anomaly" not in st.session_state.agent_conversations:
+            st.session_state.agent_conversations["anomaly"] = []
         memory = st.session_state.agent_conversations["anomaly"]
-        st.markdown("🚨 **Anomaly Detection Agent**")
+        user_input = st.session_state.current_input
     else:
-        memory = []
-
-    # Only do anomaly scan once
-    if not memory:
-        if streamlit_mode and st:
-            st.markdown("🔍 Scanning your debit transactions for unusual activity...")
+        if not hasattr(run_anomaly_agent_loop, "memory"):
+            run_anomaly_agent_loop.memory = []
+        memory = run_anomaly_agent_loop.memory
 
         print("\n🚨 Entering Anomaly Detection Mode")
         print("I've scanned your debit transactions for unusual spending.")
         print("Ask about any transaction, category, or pattern. Type 'exit' to return.\n")
 
-        # 1. Load and filter data
+        user_input = "Please analyze these transactions and tell me what's unusual."
+
+    # First run: scan transactions and send summary
+    if not memory:
         df = pd.read_csv(transactions_path)
         df_debit = df[df["Transaction Type"].str.lower() == "debit"].copy()
 
@@ -37,16 +41,13 @@ def run_anomaly_agent_loop(transactions_path: str, streamlit_mode=False):
             print(msg)
             return
 
-        # 2. Standardize amounts
         scaler = StandardScaler()
         df_debit["Amount_scaled"] = scaler.fit_transform(df_debit[["Amount"]])
 
-        # 3. Isolation Forest
         model = IsolationForest(n_estimators=100, contamination=0.01, random_state=42)
         df_debit["outlier_flag"] = model.fit_predict(df_debit[["Amount_scaled"]])
         df_debit["is_outlier"] = df_debit["outlier_flag"] == -1
 
-        # 4. Top outliers
         outliers = df_debit[df_debit["is_outlier"]].sort_values(by="Amount", ascending=False)
         if outliers.empty:
             msg = "✅ No major spending anomalies detected this month. You're all good!"
@@ -71,40 +72,49 @@ You are a smart financial assistant. Below are unusual debit transactions detect
 3. Suggest follow-up steps or questions to ask the user.
 """
 
-        memory.append({"role": "system", "content": system_prompt})
-        memory.append({
-            "role": "user",
-            "content": "Please analyze these transactions and tell me what's unusual."
-        })
+        memory.extend([
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_input}
+        ])
 
-        res = requests.post(
+        response = requests.post(
             "http://localhost:11434/api/chat",
             json={"model": "llama3", "messages": memory, "stream": False},
             headers={"Content-Type": "application/json"},
-        )
+        ).json()["message"]["content"]
 
-        response = res.json()["message"]["content"]
         memory.append({"role": "assistant", "content": response})
 
-        return response if streamlit_mode else print(f"\n💬 {response}\n")
+        if streamlit_mode:
+            return response
+        else:
+            print(f"\n💬 {response}\n")
 
-    # Subsequent turns: continue the conversation
-    user_input = st.session_state.current_input if streamlit_mode else input("AnomalyAgent> ").strip()
+    # CLI mode conversation loop
+    if not streamlit_mode:
+        while True:
+            user_input = input("AnomalyAgent> ").strip()
+            if user_input.lower() in ["exit", "quit", "back"]:
+                print("↩️ Returning to FinFluent main menu.\n")
+                break
 
-    if user_input.lower() in ["exit", "quit", "back"]:
-        if not streamlit_mode:
-            print("↩️ Returning to FinFluent main menu.\n")
-        return None
+            memory.append({"role": "user", "content": user_input})
+            response = requests.post(
+                "http://localhost:11434/api/chat",
+                json={"model": "llama3", "messages": memory, "stream": False},
+                headers={"Content-Type": "application/json"},
+            ).json()["message"]["content"]
 
-    memory.append({"role": "user", "content": user_input})
+            memory.append({"role": "assistant", "content": response})
+            print(f"\n💬 {response}\n")
 
-    res = requests.post(
-        "http://localhost:11434/api/chat",
-        json={"model": "llama3", "messages": memory, "stream": False},
-        headers={"Content-Type": "application/json"},
-    )
-
-    response = res.json()["message"]["content"]
-    memory.append({"role": "assistant", "content": response})
-
-    return response if streamlit_mode else print(f"\n💬 {response}\n")
+    # Streamlit follow-up
+    elif streamlit_mode:
+        memory.append({"role": "user", "content": user_input})
+        response = requests.post(
+            "http://localhost:11434/api/chat",
+            json={"model": "llama3", "messages": memory, "stream": False},
+            headers={"Content-Type": "application/json"},
+        ).json()["message"]["content"]
+        memory.append({"role": "assistant", "content": response})
+        return response

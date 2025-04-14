@@ -22,52 +22,60 @@ def forecast_sarima(data, steps=1):
 
 
 def run_budget_agent_loop(transactions_path: str, streamlit_mode=False):
-    import streamlit as st  # safe for dual use
+    # === Memory setup ===
+    if streamlit_mode and st:
+        if "agent_conversations" not in st.session_state:
+            st.session_state.agent_conversations = {}
+        if "budget" not in st.session_state.agent_conversations:
+            st.session_state.agent_conversations["budget"] = []
+        memory = st.session_state.agent_conversations["budget"]
+        user_input = st.session_state.current_input
+    else:
+        if not hasattr(run_budget_agent_loop, "memory"):
+            run_budget_agent_loop.memory = []
+        memory = run_budget_agent_loop.memory
 
-    # Load session memory
-    memory = st.session_state.agent_conversations["budget"]
+        print("\n💰 Entering Budget Forecasting Mode")
+        print("Ask questions about your spending forecast. Type 'exit' to return.\n")
 
-    # Only do forecast ONCE per session
+        # Prompt for first input (after greeting)
+        user_input = "Please analyze my forecast and offer suggestions."
+
+    # === Initial setup: Forecast and context ===
     if not memory:
-        # Load and clean data
         df = pd.read_csv(transactions_path, parse_dates=["Date"])
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+
+        df_salary = df[
+            (df["Category"] == "Salary") &
+            (df["Transaction Type"].str.lower() == "credit")
+        ]
+        latest_year = df_salary["Date"].dt.year.max()
+        latest_salary_entry = df_salary[df_salary["Date"].dt.year == latest_year].sort_values("Date", ascending=False).head(1)
+        user_salary = latest_salary_entry["Amount"].values[0] if not latest_salary_entry.empty else "Unknown"
+
         debit_categories = {
-            "Shopping",
-            "Entertainment",
-            "Restaurants",
-            "Travel expenses",
-            "Mortgage & Rent",
-            "Grocery shopping",
-            "Utilities",
-            "Heating fuel",
+            "Shopping", "Entertainment", "Restaurants", "Travel expenses",
+            "Mortgage & Rent", "Grocery shopping", "Utilities", "Heating fuel",
         }
         df = df[df["Category"].isin(debit_categories)]
         df["Amount"] = df["Amount"].abs()
         df["Month"] = (df["Date"] + MonthEnd(0)).dt.to_period("M").dt.to_timestamp()
-        monthly_spending = (
-            df.groupby(["Month", "Category"])["Amount"].sum().unstack().fillna(0)
-        )
-        monthly_spending.index = pd.date_range(
-            start=monthly_spending.index.min(), periods=len(monthly_spending), freq="MS"
-        )
+        monthly_spending = df.groupby(["Month", "Category"])["Amount"].sum().unstack().fillna(0)
+        monthly_spending.index = pd.date_range(start=monthly_spending.index.min(), periods=len(monthly_spending), freq="MS")
 
-        # Forecast
         future_spending = {
             category: forecast_sarima(monthly_spending[category]).iloc[0]
             for category in monthly_spending.columns
         }
 
-        # Format forecast
-        forecast_text = "\n".join(
-            f"- {cat}: ${amt:.2f}" for cat, amt in future_spending.items()
-        )
+        forecast_text = "\n".join(f"- {cat}: ${amt:.2f}" for cat, amt in future_spending.items())
 
-        # System prompt
         system_prompt = f"""
 You are an AI-powered Financial Advisor. Your job is to provide accurate, data-driven financial guidance.
 
 ## User Information:
-- Monthly Salary: $10,000  
+- Monthly Salary: ${user_salary}
 - Predicted Spending for Next Month:
 {forecast_text}
 
@@ -76,36 +84,49 @@ You are an AI-powered Financial Advisor. Your job is to provide accurate, data-d
 2. Recommend savings strategies
 3. Warn about high-risk categories
 """
+        memory.extend([
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_input}
+        ])
 
-        memory.append({"role": "system", "content": system_prompt})
-        memory.append(
-            {
-                "role": "user",
-                "content": "Please analyze my forecast and offer suggestions.",
-            }
-        )
-
-        # Initial response
-        res = requests.post(
+        response = requests.post(
             "http://localhost:11434/api/chat",
             json={"model": "llama3", "messages": memory, "stream": False},
             headers={"Content-Type": "application/json"},
-        )
+        ).json()["message"]["content"]
 
-        initial_response = res.json()["message"]["content"]
-        memory.append({"role": "assistant", "content": initial_response})
-        return initial_response
+        memory.append({"role": "assistant", "content": response})
 
-    # Otherwise: continue the conversation
-    user_input = st.session_state.current_input
-    memory.append({"role": "user", "content": user_input})
+        if streamlit_mode:
+            return response
+        else:
+            print(f"\n💬 {response}\n")
 
-    res = requests.post(
-        "http://localhost:11434/api/chat",
-        json={"model": "llama3", "messages": memory, "stream": False},
-        headers={"Content-Type": "application/json"},
-    )
+    # === CLI Conversation loop ===
+    if not streamlit_mode:
+        while True:
+            user_input = input("BudgetAgent> ").strip()
+            if user_input.lower() in ["exit", "quit", "back"]:
+                print("↩️ Returning to FinFluent main menu.\n")
+                break
 
-    response = res.json()["message"]["content"]
-    memory.append({"role": "assistant", "content": response})
-    return response
+            memory.append({"role": "user", "content": user_input})
+            response = requests.post(
+                "http://localhost:11434/api/chat",
+                json={"model": "llama3", "messages": memory, "stream": False},
+                headers={"Content-Type": "application/json"},
+            ).json()["message"]["content"]
+
+            memory.append({"role": "assistant", "content": response})
+            print(f"\n💬 {response}\n")
+
+    # === Streamlit follow-up ===
+    elif streamlit_mode:
+        memory.append({"role": "user", "content": user_input})
+        response = requests.post(
+            "http://localhost:11434/api/chat",
+            json={"model": "llama3", "messages": memory, "stream": False},
+            headers={"Content-Type": "application/json"},
+        ).json()["message"]["content"]
+        memory.append({"role": "assistant", "content": response})
+        return response

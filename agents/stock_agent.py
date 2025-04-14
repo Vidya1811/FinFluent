@@ -9,29 +9,37 @@ except ImportError:
 
 
 def run_stock_agent_loop(streamlit_mode=False):
+    # ✅ Set up memory
     if streamlit_mode and st:
+        if "agent_conversations" not in st.session_state:
+            st.session_state.agent_conversations = {}
+        if "stock" not in st.session_state.agent_conversations:
+            st.session_state.agent_conversations["stock"] = []
         memory = st.session_state.agent_conversations["stock"]
-        st.markdown("📈 **Stock Sentiment Agent**")
-
+        user_input = st.session_state.get("current_input", "").strip()
     else:
-        memory = []
+        if not hasattr(run_stock_agent_loop, "memory"):
+            run_stock_agent_loop.memory = []
+        memory = run_stock_agent_loop.memory
+        user_input = None
 
-    # Launch services (only once per runtime; subprocess is idempotent here)
+        print("\n📈 Entering Stock Sentiment Mode")
+        print("Ask about any stock ticker (e.g., TSLA, AAPL, NVDA).")
+        print("Type 'exit' to return to the main FinFluent menu.\n")
+
+    # ✅ Start subprocesses once per session
     if not memory:
         print("🚀 Starting stock sentiment services...")
         subprocess.Popen(["bash", "stock_sentiment_analysis/llm_service/script.sh"])
         subprocess.Popen(["bash", "stock_sentiment_analysis/master_service/script.sh"])
-        time.sleep(5)  # Wait for APIs to boot
+        time.sleep(5)
 
-    # ✅ STREAMLIT MODE
+    # ✅ Streamlit Mode
     if streamlit_mode and st:
-        user_input = st.session_state.get("current_input", "").strip()
-
         if user_input.lower() in ["exit", "quit", "back"]:
-            st.session_state.agent_conversations["stock"] = []  # Clear memory
+            st.session_state.agent_conversations["stock"] = []
             return "↩️ Exited Stock Agent. Ask something else to continue."
 
-        # Parse ticker
         ticker = next(
             (
                 word
@@ -58,15 +66,12 @@ def run_stock_agent_loop(streamlit_mode=False):
             memory.append({"role": "user", "content": user_input})
             memory.append({"role": "assistant", "content": response})
             return response
+
         except subprocess.CalledProcessError as e:
             return f"❌ Stock analysis failed.\n\n{e.output.decode('utf-8') if e.output else 'No output'}"
 
-    # ✅ CLI MODE
+    # ✅ CLI Mode
     else:
-        print("\n📈 Entering Stock Sentiment Mode")
-        print("Ask about any stock ticker (e.g., TSLA, AAPL, NVDA).")
-        print("Type 'exit' to return to the main FinFluent menu.\n")
-
         while True:
             user_input = input("StockAgent> ").strip()
             if user_input.lower() in ["exit", "quit", "back"]:
@@ -96,10 +101,12 @@ def run_stock_agent_loop(streamlit_mode=False):
                     ],
                     stderr=subprocess.STDOUT,
                 )
-                print(output.decode("utf-8"))
+                response = output.decode("utf-8")
+                memory.append({"role": "user", "content": user_input})
+                memory.append({"role": "assistant", "content": response})
+                print(f"\n💬 {response}\n")
+
             except subprocess.CalledProcessError as e:
                 print("❌ Stock analysis failed.")
                 print(f"Command: {e.cmd}")
-                print(
-                    f"Output:\n{e.output.decode('utf-8') if e.output else 'No output'}"
-                )
+                print(f"Output:\n{e.output.decode('utf-8') if e.output else 'No output'}")

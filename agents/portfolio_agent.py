@@ -27,21 +27,23 @@ from stock_sentiment_analysis.master_service.master_agent.agents.alpha_vantage_a
 
 
 def run_portfolio_agent_loop(csv_path: str, streamlit_mode=False):
-    memory = (
-        st.session_state.agent_conversations["portfolio"]
-        if streamlit_mode and st
-        else []
-    )
+    # Session memory setup
+    if streamlit_mode and st:
+        if "agent_conversations" not in st.session_state:
+            st.session_state.agent_conversations = {}
+        if "portfolio" not in st.session_state.agent_conversations:
+            st.session_state.agent_conversations["portfolio"] = []
+        memory = st.session_state.agent_conversations["portfolio"]
+        user_input = st.session_state.current_input
+    else:
+        if not hasattr(run_portfolio_agent_loop, "memory"):
+            run_portfolio_agent_loop.memory = []
+        memory = run_portfolio_agent_loop.memory
 
-    if streamlit_mode and st and not memory:
-        st.markdown("📊 **Stock Portfolio Analyzer**")
-        st.markdown("Reading your portfolio and fetching market insights...")
-
-    if not streamlit_mode:
         print("\n📊 Entering Stock Portfolio Analyzer")
         print("Reading your portfolio and fetching market insights...")
 
-    # Run summary once
+    # First message = build system prompt
     if not memory:
         df = pd.read_csv(csv_path)
         if df.empty or not all(
@@ -55,12 +57,11 @@ def run_portfolio_agent_loop(csv_path: str, streamlit_mode=False):
         portfolio_summary = []
 
         for _, row in df.iterrows():
-            ticker = row["Ticker"]
-            holding = row["Holding"]
-            profit_pct = row["Profit percentage"]
-
-            data = {"ticker": ticker, "holding": holding, "profit_pct": profit_pct}
-
+            data = {
+                "ticker": row["Ticker"],
+                "holding": row["Holding"],
+                "profit_pct": row["Profit percentage"],
+            }
             data = price_agent.run(data)
             data = news_agent.run(data)
             portfolio_summary.append(data)
@@ -93,51 +94,54 @@ In the end, include:
 - Recent News:
 """
             for article in stock.get("sources", [])[:2]:
-                analysis_input += (
-                    f"    • {article['title']} ({article['sentiment_label']})\n"
-                )
+                analysis_input += f"    • {article['title']} ({article['sentiment_label']})\n"
 
-        memory.append({"role": "system", "content": system_prompt})
-        memory.append({"role": "user", "content": analysis_input})
+        memory.extend([
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": analysis_input}
+        ])
 
-        res = requests.post(
+        response = requests.post(
             "http://localhost:11434/api/chat",
             json={"model": "llama3", "messages": memory, "stream": False},
             headers={"Content-Type": "application/json"},
-        )
+        ).json()["message"]["content"]
 
-        assistant_response = res.json()["message"]["content"]
-        memory.append({"role": "assistant", "content": assistant_response})
+        memory.append({"role": "assistant", "content": response})
+        if streamlit_mode:
+            return response
+        else:
+            print(f"\n💬 {response}\n")
 
-        return (
-            assistant_response
-            if streamlit_mode
-            else print(f"\n💬 {assistant_response}\n")
-        )
+    # CLI Follow-up loop (always run after first response)
+    if not streamlit_mode:
+        while True:
+            user_input = input("PortfolioAgent> ").strip()
+            if user_input.lower() in ["exit", "quit", "back"]:
+                print("↩️ Returning to FinFluent main menu.\n")
+                break
 
-    # 🔁 Continue multi-turn conversation
-    user_input = (
-        st.session_state.current_input
-        if streamlit_mode
-        else input("PortfolioAgent> ").strip()
-    )
+            memory.append({"role": "user", "content": user_input})
+            response = requests.post(
+                "http://localhost:11434/api/chat",
+                json={"model": "llama3", "messages": memory, "stream": False},
+                headers={"Content-Type": "application/json"},
+            ).json()["message"]["content"]
 
-    if user_input.lower() in ["exit", "quit", "back"]:
-        if not streamlit_mode:
-            print("↩️ Returning to FinFluent main menu.\n")
-        return None
+            memory.append({"role": "assistant", "content": response})
+            print(f"\n💬 {response}\n")
 
-    memory.append({"role": "user", "content": user_input})
+    # Streamlit follow-up (one turn)
+    elif streamlit_mode:
+        if user_input.lower() in ["exit", "quit", "back"]:
+            return None
 
-    res = requests.post(
-        "http://localhost:11434/api/chat",
-        json={"model": "llama3", "messages": memory, "stream": False},
-        headers={"Content-Type": "application/json"},
-    )
+        memory.append({"role": "user", "content": user_input})
+        response = requests.post(
+            "http://localhost:11434/api/chat",
+            json={"model": "llama3", "messages": memory, "stream": False},
+            headers={"Content-Type": "application/json"},
+        ).json()["message"]["content"]
 
-    assistant_response = res.json()["message"]["content"]
-    memory.append({"role": "assistant", "content": assistant_response})
-
-    return (
-        assistant_response if streamlit_mode else print(f"\n💬 {assistant_response}\n")
-    )
+        memory.append({"role": "assistant", "content": response})
+        return response
