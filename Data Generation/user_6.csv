@@ -1,11 +1,11 @@
 Date,Description,Amount,Transaction Type,Category,Account Name
-01-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+01-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 01-01-2020,Eversource Electricity,58.91,debit,Utilities,Checking
 01-01-2020,National Grid Gas,77.52,debit,Utilities,Checking
 01-01-2020,Heating fuel,249.72,debit,Utilities,Checking
 01-01-2020,MBTA,18.33,debit,Travel expenses,Credit Card
 01-01-2020,AMC Boston,59.78,debit,Entertainment,Credit Card
-01-01-2020,Temu,70.0,debit,Shopping,Credit Card
+01-01-2020,Temu,70,debit,Shopping,Credit Card
 01-01-2020,Mama-cita,76.19,debit,Restaurants,Credit Card
 01-02-2020,Karaoke,37.89,debit,Entertainment,Credit Card
 01-03-2020,Amazon,41.39,debit,Shopping,Credit Card
@@ -45,7 +45,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-13-2020,Dominos,49.3,debit,Restaurants,Credit Card
 01-13-2020,StandUp show,22.18,debit,Entertainment,Credit Card
 01-13-2020,Credit Transaction,8.5,credit,Cashback Rewards,Savings
-01-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+01-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 01-14-2020,StandUp show,27.79,debit,Entertainment,Credit Card
 01-14-2020,Mama-cita,37.91,debit,Restaurants,Credit Card
 01-14-2020,Lyft,19.21,debit,Travel expenses,Credit Card
@@ -108,7 +108,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-01-2020,Ace Hardware,226.04,debit,Grocery shopping,Credit Card
 02-01-2020,Stop and Shop,238.04,debit,Grocery shopping,Credit Card
 02-01-2020,Eversource Electricity,59.12,debit,Utilities,Checking
-02-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+02-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 02-01-2020,National Grid Gas,67.67,debit,Utilities,Checking
 02-01-2020,Heating fuel,225.87,debit,Utilities,Checking
 02-02-2020,Amazon,62.34,debit,Shopping,Credit Card
@@ -151,7 +151,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-12-2020,Uber,25.74,debit,Travel expenses,Credit Card
 02-12-2020,Credit Transaction,62.38,credit,Dividends,Savings
 02-12-2020,Stop and Shop,184.86,debit,Grocery shopping,Credit Card
-02-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+02-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 02-13-2020,Ace Hardware,218.57,debit,Grocery shopping,Credit Card
 02-13-2020,Mall,42.23,debit,Shopping,Credit Card
 02-13-2020,Dominos,51.62,debit,Restaurants,Credit Card
@@ -222,7 +222,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-29-2020,Uber,12.62,debit,Travel expenses,Credit Card
 02-29-2020,Lyft,12.04,debit,Travel expenses,Credit Card
 02-29-2020,Temu,71.06,debit,Shopping,Credit Card
-03-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+03-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 03-01-2020,Eversource Electricity,68.41,debit,Utilities,Checking
 03-01-2020,National Grid Gas,59.72,debit,Utilities,Checking
 03-01-2020,Heating fuel,185.14,debit,Utilities,Checking
@@ -262,7 +262,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-12-2020,Boston Halal,67.77,debit,Restaurants,Credit Card
 03-12-2020,Dominos,47.27,debit,Restaurants,Credit Card
 03-12-2020,AMC Boston,62.22,debit,Entertainment,Credit Card
-03-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+03-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 03-13-2020,Ice skating,36.56,debit,Entertainment,Credit Card
 03-14-2020,Market Basket,194.5,debit,Grocery shopping,Credit Card
 03-14-2020,Dominos,63.13,debit,Restaurants,Credit Card
@@ -276,7 +276,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-15-2020,Boston Shawarma,45.65,debit,Restaurants,Credit Card
 03-15-2020,Temu,58.25,debit,Shopping,Credit Card
 03-16-2020,Mama-cita,31.75,debit,Restaurants,Credit Card
-03-16-2020,Amazon,21.0,debit,Shopping,Credit Card
+03-16-2020,Amazon,21,debit,Shopping,Credit Card
 03-16-2020,Karaoke,58.61,debit,Entertainment,Credit Card
 03-17-2020,Stop and Shop,183.46,debit,Grocery shopping,Credit Card
 03-17-2020,Boston Shawarma,52.86,debit,Restaurants,Credit Card
@@ -303,7 +303,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-25-2020,Stop and Shop,237.79,debit,Grocery shopping,Credit Card
 03-25-2020,Mall,55.95,debit,Shopping,Credit Card
 03-25-2020,Boston Shawarma,79.87,debit,Restaurants,Credit Card
-03-25-2020,Ace Hardware,164.0,debit,Grocery shopping,Credit Card
+03-25-2020,Ace Hardware,164,debit,Grocery shopping,Credit Card
 03-26-2020,Stop and Shop,215.65,debit,Grocery shopping,Credit Card
 03-26-2020,Mall,56.89,debit,Shopping,Credit Card
 03-26-2020,Market Basket,187.54,debit,Grocery shopping,Credit Card
@@ -319,7 +319,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-30-2020,Ace Hardware,212.29,debit,Grocery shopping,Credit Card
 03-30-2020,StandUp show,57.69,debit,Entertainment,Credit Card
 03-31-2020,Temu,58.34,debit,Shopping,Credit Card
-04-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+04-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 04-01-2020,Eversource Electricity,60.08,debit,Utilities,Checking
 04-01-2020,National Grid Gas,58.55,debit,Utilities,Checking
 04-01-2020,Heating fuel,229.12,debit,Utilities,Checking
@@ -365,8 +365,8 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-12-2020,Boston Shawarma,70.14,debit,Restaurants,Credit Card
 04-12-2020,Temu,28.18,debit,Shopping,Credit Card
 04-12-2020,Dominos,52.69,debit,Restaurants,Credit Card
-04-13-2020,Stop and Shop,189.0,debit,Grocery shopping,Credit Card
-04-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+04-13-2020,Stop and Shop,189,debit,Grocery shopping,Credit Card
+04-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 04-13-2020,Dominos,58.11,debit,Restaurants,Credit Card
 04-14-2020,Amazon,71.23,debit,Shopping,Credit Card
 04-14-2020,Uber,11.96,debit,Travel expenses,Credit Card
@@ -427,7 +427,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-29-2020,Amazon,70.81,debit,Shopping,Credit Card
 04-30-2020,Stop and Shop,191.27,debit,Grocery shopping,Credit Card
 04-30-2020,Boston Shawarma,79.35,debit,Restaurants,Credit Card
-05-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+05-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 05-01-2020,Eversource Electricity,75.14,debit,Utilities,Checking
 05-01-2020,National Grid Gas,68.4,debit,Utilities,Checking
 05-01-2020,Temu,33.93,debit,Shopping,Credit Card
@@ -480,7 +480,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-13-2020,Mama-cita,25.87,debit,Restaurants,Credit Card
 05-13-2020,Market Basket,164.6,debit,Grocery shopping,Credit Card
 05-13-2020,Uber,24.03,debit,Travel expenses,Credit Card
-05-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+05-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 05-14-2020,Temu,75.8,debit,Shopping,Credit Card
 05-14-2020,Karaoke,36.71,debit,Entertainment,Credit Card
 05-14-2020,Trader Joes,240.01,debit,Grocery shopping,Credit Card
@@ -497,7 +497,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-17-2020,AMC Boston,25.36,debit,Entertainment,Credit Card
 05-17-2020,Boston Halal,71.99,debit,Restaurants,Credit Card
 05-18-2020,AMC Boston,53.14,debit,Entertainment,Credit Card
-05-18-2020,Ace Hardware,234.0,debit,Grocery shopping,Credit Card
+05-18-2020,Ace Hardware,234,debit,Grocery shopping,Credit Card
 05-19-2020,Boston Halal,79.76,debit,Restaurants,Credit Card
 05-19-2020,Dominos,34.66,debit,Restaurants,Credit Card
 05-19-2020,Amazon,59.01,debit,Shopping,Credit Card
@@ -539,7 +539,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-31-2020,Trader Joes,152.61,debit,Grocery shopping,Credit Card
 05-31-2020,Temu,70.38,debit,Shopping,Credit Card
 06-01-2020,Ace Hardware,177.5,debit,Grocery shopping,Credit Card
-06-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+06-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 06-01-2020,Eversource Electricity,62.65,debit,Utilities,Checking
 06-01-2020,National Grid Gas,66.29,debit,Utilities,Checking
 06-01-2020,Mall,72.58,debit,Shopping,Credit Card
@@ -549,7 +549,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-04-2020,Ace Hardware,188.07,debit,Grocery shopping,Credit Card
 06-04-2020,Temu,37.31,debit,Shopping,Credit Card
 06-04-2020,Stop and Shop,152.48,debit,Grocery shopping,Credit Card
-06-06-2020,Boston Halal,28.0,debit,Restaurants,Credit Card
+06-06-2020,Boston Halal,28,debit,Restaurants,Credit Card
 06-06-2020,Stop and Shop,172.21,debit,Grocery shopping,Credit Card
 06-06-2020,Lyft,21.41,debit,Travel expenses,Credit Card
 06-06-2020,Market Basket,164.49,debit,Grocery shopping,Credit Card
@@ -562,7 +562,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-10-2020,Credit Transaction,12.58,credit,Cashback Rewards,Savings
 06-13-2020,Market Basket,175.06,debit,Grocery shopping,Credit Card
 06-13-2020,Ice skating,32.94,debit,Entertainment,Credit Card
-06-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+06-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 06-13-2020,MBTA,20.25,debit,Travel expenses,Credit Card
 06-13-2020,Lyft,10.35,debit,Travel expenses,Credit Card
 06-13-2020,Boston Shawarma,67.24,debit,Restaurants,Credit Card
@@ -615,7 +615,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-30-2020,Ace Hardware,229.53,debit,Grocery shopping,Credit Card
 06-30-2020,Market Basket,216.99,debit,Grocery shopping,Credit Card
 06-30-2020,Mama-cita,35.91,debit,Restaurants,Credit Card
-07-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+07-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 07-01-2020,Eversource Electricity,59.44,debit,Utilities,Checking
 07-01-2020,National Grid Gas,75.22,debit,Utilities,Checking
 07-01-2020,Karaoke,39.97,debit,Entertainment,Credit Card
@@ -643,7 +643,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-11-2020,Stop and Shop,204.64,debit,Grocery shopping,Credit Card
 07-12-2020,Stop and Shop,202.97,debit,Grocery shopping,Credit Card
 07-13-2020,Trader Joes,206.52,debit,Grocery shopping,Credit Card
-07-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+07-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 07-14-2020,StandUp show,63.85,debit,Entertainment,Credit Card
 07-14-2020,Boston Shawarma,59.58,debit,Restaurants,Credit Card
 07-14-2020,Credit Transaction,76.67,credit,Dividends,Savings
@@ -696,7 +696,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-31-2020,Boston Halal,55.45,debit,Restaurants,Credit Card
 07-31-2020,Stop and Shop,183.58,debit,Grocery shopping,Credit Card
 07-31-2020,Mama-cita,29.46,debit,Restaurants,Credit Card
-08-01-2020,Rent/ Mortgage,1400.0,debit,Mortgage & Rent,Savings
+08-01-2020,Rent/ Mortgage,1400,debit,Mortgage & Rent,Savings
 08-01-2020,Eversource Electricity,77.44,debit,Utilities,Checking
 08-01-2020,National Grid Gas,70.9,debit,Utilities,Checking
 08-01-2020,Ice skating,32.37,debit,Entertainment,Credit Card
@@ -741,7 +741,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-12-2020,MBTA,18.49,debit,Travel expenses,Credit Card
 08-12-2020,Credit Transaction,4.86,credit,Cashback Rewards,Savings
 08-12-2020,Amazon,66.28,debit,Shopping,Credit Card
-08-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+08-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 08-14-2020,Trader Joes,206.31,debit,Grocery shopping,Credit Card
 08-14-2020,Credit Transaction,17.94,credit,Cashback Rewards,Savings
 08-14-2020,Market Basket,194.77,debit,Grocery shopping,Credit Card
@@ -763,7 +763,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-20-2020,Stop and Shop,202.76,debit,Grocery shopping,Credit Card
 08-21-2020,Amazon,73.31,debit,Shopping,Credit Card
 08-21-2020,Dominos,67.42,debit,Restaurants,Credit Card
-08-22-2020,Temu,21.0,debit,Shopping,Credit Card
+08-22-2020,Temu,21,debit,Shopping,Credit Card
 08-23-2020,Trader Joes,154.21,debit,Grocery shopping,Credit Card
 08-23-2020,Boston Halal,55.5,debit,Restaurants,Credit Card
 08-23-2020,Stop and Shop,211.84,debit,Grocery shopping,Credit Card
@@ -797,7 +797,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-30-2020,Trader Joes,155.62,debit,Grocery shopping,Credit Card
 08-30-2020,Credit Transaction,12.13,credit,Cashback Rewards,Savings
 08-31-2020,MBTA,26.34,debit,Travel expenses,Credit Card
-09-01-2020,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+09-01-2020,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 09-01-2020,Eversource Electricity,78.71,debit,Utilities,Checking
 09-01-2020,National Grid Gas,68.46,debit,Utilities,Checking
 09-01-2020,Amazon,78.11,debit,Shopping,Credit Card
@@ -838,7 +838,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-11-2020,Market Basket,173.79,debit,Grocery shopping,Credit Card
 09-12-2020,MBTA,26.2,debit,Travel expenses,Credit Card
 09-13-2020,Credit Transaction,5.66,credit,Cashback Rewards,Savings
-09-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+09-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 09-13-2020,StandUp show,23.58,debit,Entertainment,Credit Card
 09-14-2020,MBTA,13.45,debit,Travel expenses,Credit Card
 09-14-2020,Dominos,70.9,debit,Restaurants,Credit Card
@@ -857,7 +857,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-17-2020,Mama-cita,72.29,debit,Restaurants,Credit Card
 09-17-2020,Mall,38.26,debit,Shopping,Credit Card
 09-18-2020,Dominos,71.17,debit,Restaurants,Credit Card
-09-18-2020,Temu,53.0,debit,Shopping,Credit Card
+09-18-2020,Temu,53,debit,Shopping,Credit Card
 09-18-2020,Market Basket,238.8,debit,Grocery shopping,Credit Card
 09-18-2020,Ace Hardware,156.8,debit,Grocery shopping,Credit Card
 09-19-2020,Ice skating,32.27,debit,Entertainment,Credit Card
@@ -896,7 +896,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-30-2020,Boston Shawarma,29.59,debit,Restaurants,Credit Card
 09-30-2020,Stop and Shop,208.92,debit,Grocery shopping,Credit Card
 09-30-2020,Ace Hardware,175.93,debit,Grocery shopping,Credit Card
-10-01-2020,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+10-01-2020,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 10-01-2020,Eversource Electricity,68.15,debit,Utilities,Checking
 10-01-2020,National Grid Gas,74.11,debit,Utilities,Checking
 10-01-2020,Heating fuel,201.09,debit,Utilities,Checking
@@ -936,7 +936,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-12-2020,Lyft,17.31,debit,Travel expenses,Credit Card
 10-13-2020,Temu,51.08,debit,Shopping,Credit Card
 10-13-2020,Dominos,55.95,debit,Restaurants,Credit Card
-10-13-2020,Monthly direct deposit - Salary,6000.0,credit,Salary,Savings
+10-13-2020,Monthly direct deposit - Salary,6000,credit,Salary,Savings
 10-14-2020,Temu,44.9,debit,Shopping,Credit Card
 10-14-2020,Karaoke,27.88,debit,Entertainment,Credit Card
 10-14-2020,Ace Hardware,170.4,debit,Grocery shopping,Credit Card
@@ -965,7 +965,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-24-2020,Mall,50.98,debit,Shopping,Credit Card
 10-24-2020,Dominos,63.84,debit,Restaurants,Credit Card
 10-25-2020,Market Basket,181.76,debit,Grocery shopping,Credit Card
-10-25-2020,Trader Joes,226.0,debit,Grocery shopping,Credit Card
+10-25-2020,Trader Joes,226,debit,Grocery shopping,Credit Card
 10-25-2020,Amazon,35.59,debit,Shopping,Credit Card
 10-25-2020,Credit Transaction,16.61,credit,Cashback Rewards,Savings
 10-25-2020,MBTA,20.62,debit,Travel expenses,Credit Card
@@ -986,7 +986,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-31-2020,Mama-cita,34.32,debit,Restaurants,Credit Card
 10-31-2020,Trader Joes,226.1,debit,Grocery shopping,Credit Card
 10-31-2020,Stop and Shop,171.93,debit,Grocery shopping,Credit Card
-11-01-2020,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+11-01-2020,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 11-01-2020,Eversource Electricity,66.91,debit,Utilities,Checking
 11-01-2020,National Grid Gas,76.9,debit,Utilities,Checking
 11-01-2020,Heating fuel,214.06,debit,Utilities,Checking
@@ -1017,7 +1017,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-11-2020,Market Basket,207.29,debit,Grocery shopping,Credit Card
 11-12-2020,Market Basket,181.02,debit,Grocery shopping,Credit Card
 11-12-2020,Trader Joes,213.94,debit,Grocery shopping,Credit Card
-11-13-2020,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+11-13-2020,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 11-13-2020,Dominos,38.09,debit,Restaurants,Credit Card
 11-13-2020,Boston Shawarma,42.96,debit,Restaurants,Credit Card
 11-13-2020,Uber,24.49,debit,Travel expenses,Credit Card
@@ -1064,7 +1064,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-30-2020,StandUp show,35.86,debit,Entertainment,Credit Card
 11-30-2020,Dominos,44.82,debit,Restaurants,Credit Card
 12-01-2020,Ice skating,66.91,debit,Entertainment,Credit Card
-12-01-2020,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+12-01-2020,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 12-01-2020,Eversource Electricity,69.27,debit,Utilities,Checking
 12-01-2020,National Grid Gas,56.57,debit,Utilities,Checking
 12-01-2020,Heating fuel,214.56,debit,Utilities,Checking
@@ -1111,7 +1111,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-12-2020,Market Basket,167.81,debit,Grocery shopping,Credit Card
 12-12-2020,Dominos,32.72,debit,Restaurants,Credit Card
 12-13-2020,Mama-cita,44.91,debit,Restaurants,Credit Card
-12-13-2020,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+12-13-2020,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 12-13-2020,Amazon,63.33,debit,Shopping,Credit Card
 12-13-2020,Trader Joes,172.36,debit,Grocery shopping,Credit Card
 12-14-2020,Market Basket,228.82,debit,Grocery shopping,Credit Card
@@ -1179,7 +1179,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-31-2020,Stop and Shop,175.71,debit,Grocery shopping,Credit Card
 12-31-2020,Mall,38.32,debit,Shopping,Credit Card
 01-01-2021,Karaoke,70.54,debit,Entertainment,Credit Card
-01-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+01-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 01-01-2021,Eversource Electricity,64.52,debit,Utilities,Checking
 01-01-2021,National Grid Gas,66.78,debit,Utilities,Checking
 01-01-2021,Heating fuel,157.47,debit,Utilities,Checking
@@ -1224,7 +1224,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-12-2021,Temu,75.64,debit,Shopping,Credit Card
 01-12-2021,Stop and Shop,244.61,debit,Grocery shopping,Credit Card
 01-13-2021,Uber,10.94,debit,Travel expenses,Credit Card
-01-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+01-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 01-14-2021,Boston Halal,33.01,debit,Restaurants,Credit Card
 01-16-2021,Karaoke,26.65,debit,Entertainment,Credit Card
 01-16-2021,Trader Joes,252.82,debit,Grocery shopping,Credit Card
@@ -1244,10 +1244,10 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-21-2021,Trader Joes,200.06,debit,Grocery shopping,Credit Card
 01-21-2021,Boston Halal,70.39,debit,Restaurants,Credit Card
 01-21-2021,Stop and Shop,183.47,debit,Grocery shopping,Credit Card
-01-22-2021,Market Basket,206.0,debit,Grocery shopping,Credit Card
+01-22-2021,Market Basket,206,debit,Grocery shopping,Credit Card
 01-22-2021,Ace Hardware,258.43,debit,Grocery shopping,Credit Card
 01-22-2021,Temu,60.69,debit,Shopping,Credit Card
-01-22-2021,Trader Joes,250.0,debit,Grocery shopping,Credit Card
+01-22-2021,Trader Joes,250,debit,Grocery shopping,Credit Card
 01-23-2021,AMC Boston,62.89,debit,Entertainment,Credit Card
 01-23-2021,Lyft,13.91,debit,Travel expenses,Credit Card
 01-24-2021,Mama-cita,60.72,debit,Restaurants,Credit Card
@@ -1275,7 +1275,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-31-2021,Market Basket,217.52,debit,Grocery shopping,Credit Card
 01-31-2021,Ace Hardware,170.33,debit,Grocery shopping,Credit Card
 02-01-2021,Boston Shawarma,63.84,debit,Restaurants,Credit Card
-02-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+02-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 02-01-2021,Eversource Electricity,53.32,debit,Utilities,Checking
 02-01-2021,National Grid Gas,76.04,debit,Utilities,Checking
 02-01-2021,Heating fuel,224.55,debit,Utilities,Checking
@@ -1322,10 +1322,10 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-13-2021,Stop and Shop,240.14,debit,Grocery shopping,Credit Card
 02-13-2021,Ice skating,52.76,debit,Entertainment,Credit Card
 02-13-2021,Uber,21.44,debit,Travel expenses,Credit Card
-02-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+02-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 02-13-2021,Karaoke,64.85,debit,Entertainment,Credit Card
 02-14-2021,Uber,28.42,debit,Travel expenses,Credit Card
-02-14-2021,Ice skating,21.0,debit,Entertainment,Credit Card
+02-14-2021,Ice skating,21,debit,Entertainment,Credit Card
 02-14-2021,AMC Boston,44.88,debit,Entertainment,Credit Card
 02-14-2021,Stop and Shop,156.73,debit,Grocery shopping,Credit Card
 02-15-2021,Boston Halal,75.69,debit,Restaurants,Credit Card
@@ -1372,7 +1372,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-23-2021,Market Basket,242.15,debit,Grocery shopping,Credit Card
 02-23-2021,Mama-cita,60.27,debit,Restaurants,Credit Card
 02-25-2021,Market Basket,178.68,debit,Grocery shopping,Credit Card
-02-25-2021,Credit Transaction,80.0,credit,Dividends,Savings
+02-25-2021,Credit Transaction,80,credit,Dividends,Savings
 02-25-2021,AMC Boston,36.11,debit,Entertainment,Credit Card
 02-25-2021,Stop and Shop,239.54,debit,Grocery shopping,Credit Card
 02-25-2021,Temu,37.79,debit,Shopping,Credit Card
@@ -1386,8 +1386,8 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-28-2021,Uber,19.79,debit,Travel expenses,Credit Card
 02-28-2021,Lyft,15.2,debit,Travel expenses,Credit Card
 03-01-2021,Ace Hardware,202.36,debit,Grocery shopping,Credit Card
-03-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
-03-01-2021,Eversource Electricity,51.0,debit,Utilities,Checking
+03-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
+03-01-2021,Eversource Electricity,51,debit,Utilities,Checking
 03-01-2021,National Grid Gas,66.89,debit,Utilities,Checking
 03-01-2021,Heating fuel,200.18,debit,Utilities,Checking
 03-01-2021,Stop and Shop,239.14,debit,Grocery shopping,Credit Card
@@ -1435,9 +1435,9 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-11-2021,Market Basket,186.23,debit,Grocery shopping,Credit Card
 03-12-2021,Ice skating,56.47,debit,Entertainment,Credit Card
 03-12-2021,Lyft,21.67,debit,Travel expenses,Credit Card
-03-13-2021,Amazon,25.0,debit,Shopping,Credit Card
+03-13-2021,Amazon,25,debit,Shopping,Credit Card
 03-13-2021,Boston Halal,65.26,debit,Restaurants,Credit Card
-03-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+03-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 03-13-2021,Market Basket,196.46,debit,Grocery shopping,Credit Card
 03-14-2021,Lyft,18.09,debit,Travel expenses,Credit Card
 03-14-2021,Credit Transaction,7.02,credit,Cashback Rewards,Savings
@@ -1502,7 +1502,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-30-2021,Uber,24.52,debit,Travel expenses,Credit Card
 03-30-2021,Boston Halal,65.49,debit,Restaurants,Credit Card
 03-31-2021,Temu,82.73,debit,Shopping,Credit Card
-04-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+04-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 04-01-2021,Eversource Electricity,71.83,debit,Utilities,Checking
 04-01-2021,National Grid Gas,55.21,debit,Utilities,Checking
 04-01-2021,Heating fuel,243.25,debit,Utilities,Checking
@@ -1560,7 +1560,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-12-2021,Mall,59.33,debit,Shopping,Credit Card
 04-13-2021,Mama-cita,64.26,debit,Restaurants,Credit Card
 04-13-2021,Ace Hardware,201.84,debit,Grocery shopping,Credit Card
-04-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+04-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 04-14-2021,Lyft,26.84,debit,Travel expenses,Credit Card
 04-14-2021,Boston Shawarma,50.42,debit,Restaurants,Credit Card
 04-14-2021,Karaoke,33.84,debit,Entertainment,Credit Card
@@ -1603,7 +1603,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-25-2021,Temu,29.41,debit,Shopping,Credit Card
 04-26-2021,StandUp show,29.5,debit,Entertainment,Credit Card
 04-26-2021,Stop and Shop,189.77,debit,Grocery shopping,Credit Card
-04-26-2021,Ace Hardware,252.0,debit,Grocery shopping,Credit Card
+04-26-2021,Ace Hardware,252,debit,Grocery shopping,Credit Card
 04-26-2021,Trader Joes,223.96,debit,Grocery shopping,Credit Card
 04-26-2021,Market Basket,248.27,debit,Grocery shopping,Credit Card
 04-27-2021,StandUp show,34.58,debit,Entertainment,Credit Card
@@ -1623,7 +1623,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-29-2021,Trader Joes,244.77,debit,Grocery shopping,Credit Card
 04-29-2021,Stop and Shop,170.43,debit,Grocery shopping,Credit Card
 04-29-2021,Market Basket,178.79,debit,Grocery shopping,Credit Card
-05-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+05-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 05-01-2021,Eversource Electricity,67.27,debit,Utilities,Checking
 05-01-2021,National Grid Gas,58.34,debit,Utilities,Checking
 05-01-2021,AMC Boston,67.32,debit,Entertainment,Credit Card
@@ -1662,26 +1662,26 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-10-2021,Credit Transaction,54.17,credit,Dividends,Savings
 05-10-2021,Uber,16.97,debit,Travel expenses,Credit Card
 05-11-2021,Mama-cita,38.55,debit,Restaurants,Credit Card
-05-11-2021,Ice skating,68.0,debit,Entertainment,Credit Card
+05-11-2021,Ice skating,68,debit,Entertainment,Credit Card
 05-12-2021,Karaoke,31.31,debit,Entertainment,Credit Card
 05-12-2021,Trader Joes,167.63,debit,Grocery shopping,Credit Card
 05-12-2021,Credit Transaction,6.4,credit,Cashback Rewards,Savings
 05-12-2021,Temu,53.17,debit,Shopping,Credit Card
 05-13-2021,Karaoke,34.93,debit,Entertainment,Credit Card
-05-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+05-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 05-14-2021,Karaoke,47.59,debit,Entertainment,Credit Card
 05-14-2021,Credit Transaction,12.94,credit,Cashback Rewards,Savings
 05-14-2021,Boston Shawarma,80.85,debit,Restaurants,Credit Card
 05-14-2021,Uber,31.22,debit,Travel expenses,Credit Card
 05-14-2021,Temu,60.16,debit,Shopping,Credit Card
 05-15-2021,AMC Boston,37.81,debit,Entertainment,Credit Card
-05-15-2021,Ace Hardware,214.0,debit,Grocery shopping,Credit Card
+05-15-2021,Ace Hardware,214,debit,Grocery shopping,Credit Card
 05-16-2021,Credit Transaction,17.51,credit,Cashback Rewards,Savings
 05-16-2021,Uber,20.37,debit,Travel expenses,Credit Card
 05-16-2021,StandUp show,32.57,debit,Entertainment,Credit Card
 05-16-2021,Karaoke,57.52,debit,Entertainment,Credit Card
 05-17-2021,Stop and Shop,256.75,debit,Grocery shopping,Credit Card
-05-18-2021,Boston Halal,39.0,debit,Restaurants,Credit Card
+05-18-2021,Boston Halal,39,debit,Restaurants,Credit Card
 05-18-2021,Stop and Shop,161.48,debit,Grocery shopping,Credit Card
 05-19-2021,Boston Shawarma,46.69,debit,Restaurants,Credit Card
 05-19-2021,MBTA,21.19,debit,Travel expenses,Credit Card
@@ -1741,7 +1741,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-31-2021,Karaoke,55.49,debit,Entertainment,Credit Card
 05-31-2021,Temu,67.86,debit,Shopping,Credit Card
 06-01-2021,Ice skating,44.77,debit,Entertainment,Credit Card
-06-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+06-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 06-01-2021,Eversource Electricity,73.96,debit,Utilities,Checking
 06-01-2021,National Grid Gas,76.95,debit,Utilities,Checking
 06-01-2021,Lyft,21.12,debit,Travel expenses,Credit Card
@@ -1759,7 +1759,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-04-2021,Temu,38.85,debit,Shopping,Credit Card
 06-05-2021,Dominos,35.28,debit,Restaurants,Credit Card
 06-05-2021,Trader Joes,242.21,debit,Grocery shopping,Credit Card
-06-06-2021,Karaoke,50.0,debit,Entertainment,Credit Card
+06-06-2021,Karaoke,50,debit,Entertainment,Credit Card
 06-06-2021,Uber,16.31,debit,Travel expenses,Credit Card
 06-06-2021,MBTA,15.98,debit,Travel expenses,Credit Card
 06-08-2021,AMC Boston,69.18,debit,Entertainment,Credit Card
@@ -1782,7 +1782,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-12-2021,Temu,66.09,debit,Shopping,Credit Card
 06-12-2021,Market Basket,237.38,debit,Grocery shopping,Credit Card
 06-12-2021,Mama-cita,48.44,debit,Restaurants,Credit Card
-06-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+06-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 06-13-2021,Lyft,20.27,debit,Travel expenses,Credit Card
 06-14-2021,Uber,24.7,debit,Travel expenses,Credit Card
 06-15-2021,Mall,45.59,debit,Shopping,Credit Card
@@ -1841,7 +1841,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-30-2021,Amazon,24.5,debit,Shopping,Credit Card
 06-30-2021,Stop and Shop,211.95,debit,Grocery shopping,Credit Card
 06-30-2021,Temu,24.2,debit,Shopping,Credit Card
-07-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+07-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 07-01-2021,Eversource Electricity,58.44,debit,Utilities,Checking
 07-01-2021,National Grid Gas,79.48,debit,Utilities,Checking
 07-01-2021,Ice skating,55.86,debit,Entertainment,Credit Card
@@ -1889,7 +1889,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-12-2021,Amazon,26.78,debit,Shopping,Credit Card
 07-13-2021,Boston Shawarma,35.11,debit,Restaurants,Credit Card
 07-13-2021,Trader Joes,214.52,debit,Grocery shopping,Credit Card
-07-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+07-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 07-13-2021,Amazon,22.3,debit,Shopping,Credit Card
 07-13-2021,Temu,78.16,debit,Shopping,Credit Card
 07-14-2021,Boston Halal,60.4,debit,Restaurants,Credit Card
@@ -1964,7 +1964,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-31-2021,Amazon,21.06,debit,Shopping,Credit Card
 07-31-2021,Mama-cita,69.71,debit,Restaurants,Credit Card
 07-31-2021,Mall,75.23,debit,Shopping,Credit Card
-08-01-2021,Rent/ Mortgage,1450.0,debit,Mortgage & Rent,Savings
+08-01-2021,Rent/ Mortgage,1450,debit,Mortgage & Rent,Savings
 08-01-2021,Eversource Electricity,50.06,debit,Utilities,Checking
 08-01-2021,National Grid Gas,59.55,debit,Utilities,Checking
 08-02-2021,Stop and Shop,193.04,debit,Grocery shopping,Credit Card
@@ -1998,7 +1998,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-13-2021,Market Basket,230.31,debit,Grocery shopping,Credit Card
 08-13-2021,Boston Halal,74.66,debit,Restaurants,Credit Card
 08-13-2021,Boston Shawarma,66.31,debit,Restaurants,Credit Card
-08-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+08-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 08-13-2021,Lyft,15.76,debit,Travel expenses,Credit Card
 08-13-2021,Ace Hardware,200.86,debit,Grocery shopping,Credit Card
 08-14-2021,Karaoke,53.77,debit,Entertainment,Credit Card
@@ -2026,7 +2026,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-25-2021,MBTA,16.48,debit,Travel expenses,Credit Card
 08-25-2021,StandUp show,51.21,debit,Entertainment,Credit Card
 08-25-2021,Lyft,16.52,debit,Travel expenses,Credit Card
-08-26-2021,Stop and Shop,254.0,debit,Grocery shopping,Credit Card
+08-26-2021,Stop and Shop,254,debit,Grocery shopping,Credit Card
 08-26-2021,Uber,21.71,debit,Travel expenses,Credit Card
 08-27-2021,Uber,10.79,debit,Travel expenses,Credit Card
 08-27-2021,AMC Boston,20.88,debit,Entertainment,Credit Card
@@ -2039,7 +2039,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-30-2021,Ace Hardware,172.31,debit,Grocery shopping,Credit Card
 08-31-2021,Boston Halal,55.25,debit,Restaurants,Credit Card
 08-31-2021,AMC Boston,21.1,debit,Entertainment,Credit Card
-09-01-2021,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+09-01-2021,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 09-01-2021,Eversource Electricity,51.9,debit,Utilities,Checking
 09-01-2021,National Grid Gas,62.9,debit,Utilities,Checking
 09-01-2021,AMC Boston,72.14,debit,Entertainment,Credit Card
@@ -2076,7 +2076,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-10-2021,Market Basket,167.59,debit,Grocery shopping,Credit Card
 09-11-2021,Stop and Shop,173.05,debit,Grocery shopping,Credit Card
 09-13-2021,Stop and Shop,178.41,debit,Grocery shopping,Credit Card
-09-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+09-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 09-13-2021,MBTA,26.29,debit,Travel expenses,Credit Card
 09-13-2021,Credit Transaction,12.28,credit,Cashback Rewards,Savings
 09-13-2021,Boston Shawarma,33.5,debit,Restaurants,Credit Card
@@ -2135,7 +2135,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-01-2021,Heating fuel,172.96,debit,Utilities,Checking
 10-01-2021,National Grid Gas,63.62,debit,Utilities,Checking
 10-01-2021,Eversource Electricity,68.7,debit,Utilities,Checking
-10-01-2021,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+10-01-2021,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 10-02-2021,Uber,12.77,debit,Travel expenses,Credit Card
 10-02-2021,Lyft,16.52,debit,Travel expenses,Credit Card
 10-02-2021,MBTA,26.8,debit,Travel expenses,Credit Card
@@ -2178,7 +2178,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-13-2021,Ice skating,60.53,debit,Entertainment,Credit Card
 10-13-2021,Dominos,63.46,debit,Restaurants,Credit Card
 10-13-2021,Stop and Shop,242.18,debit,Grocery shopping,Credit Card
-10-13-2021,Monthly direct deposit - Salary,6180.0,credit,Salary,Savings
+10-13-2021,Monthly direct deposit - Salary,6180,credit,Salary,Savings
 10-14-2021,Market Basket,204.75,debit,Grocery shopping,Credit Card
 10-14-2021,StandUp show,58.64,debit,Entertainment,Credit Card
 10-14-2021,Amazon,36.12,debit,Shopping,Credit Card
@@ -2244,7 +2244,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-31-2021,StandUp show,51.49,debit,Entertainment,Credit Card
 10-31-2021,Boston Halal,70.15,debit,Restaurants,Credit Card
 11-01-2021,Boston Shawarma,62.94,debit,Restaurants,Credit Card
-11-01-2021,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+11-01-2021,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 11-01-2021,Eversource Electricity,73.19,debit,Utilities,Checking
 11-01-2021,National Grid Gas,61.04,debit,Utilities,Checking
 11-01-2021,Heating fuel,197.29,debit,Utilities,Checking
@@ -2277,7 +2277,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-11-2021,StandUp show,22.28,debit,Entertainment,Credit Card
 11-12-2021,Lyft,26.2,debit,Travel expenses,Credit Card
 11-13-2021,Boston Shawarma,51.39,debit,Restaurants,Credit Card
-11-13-2021,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+11-13-2021,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 11-13-2021,Amazon,73.62,debit,Shopping,Credit Card
 11-13-2021,Market Basket,220.18,debit,Grocery shopping,Credit Card
 11-14-2021,Temu,50.96,debit,Shopping,Credit Card
@@ -2289,9 +2289,9 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-14-2021,Market Basket,176.66,debit,Grocery shopping,Credit Card
 11-16-2021,Boston Shawarma,54.8,debit,Restaurants,Credit Card
 11-16-2021,Trader Joes,245.72,debit,Grocery shopping,Credit Card
-11-16-2021,Stop and Shop,236.0,debit,Grocery shopping,Credit Card
+11-16-2021,Stop and Shop,236,debit,Grocery shopping,Credit Card
 11-17-2021,Dominos,59.69,debit,Restaurants,Credit Card
-11-17-2021,Credit Transaction,8.0,credit,Cashback Rewards,Savings
+11-17-2021,Credit Transaction,8,credit,Cashback Rewards,Savings
 11-17-2021,Stop and Shop,228.57,debit,Grocery shopping,Credit Card
 11-17-2021,Boston Halal,26.68,debit,Restaurants,Credit Card
 11-18-2021,Temu,35.5,debit,Shopping,Credit Card
@@ -2303,7 +2303,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-21-2021,Boston Halal,33.01,debit,Restaurants,Credit Card
 11-21-2021,MBTA,11.41,debit,Travel expenses,Credit Card
 11-22-2021,Market Basket,214.97,debit,Grocery shopping,Credit Card
-11-22-2021,Mama-cita,40.0,debit,Restaurants,Credit Card
+11-22-2021,Mama-cita,40,debit,Restaurants,Credit Card
 11-22-2021,Ace Hardware,159.53,debit,Grocery shopping,Credit Card
 11-23-2021,Lyft,20.09,debit,Travel expenses,Credit Card
 11-23-2021,Boston Halal,45.66,debit,Restaurants,Credit Card
@@ -2327,7 +2327,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-29-2021,Stop and Shop,236.07,debit,Grocery shopping,Credit Card
 11-30-2021,Temu,76.02,debit,Shopping,Credit Card
 11-30-2021,Boston Shawarma,26.96,debit,Restaurants,Credit Card
-12-01-2021,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+12-01-2021,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 12-01-2021,Eversource Electricity,55.36,debit,Utilities,Checking
 12-01-2021,National Grid Gas,57.58,debit,Utilities,Checking
 12-01-2021,Heating fuel,176.08,debit,Utilities,Checking
@@ -2377,7 +2377,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-12-2021,Ace Hardware,222.82,debit,Grocery shopping,Credit Card
 12-12-2021,AMC Boston,49.06,debit,Entertainment,Credit Card
 12-13-2021,Mall,75.57,debit,Shopping,Credit Card
-12-13-2021,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+12-13-2021,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 12-14-2021,Market Basket,226.24,debit,Grocery shopping,Credit Card
 12-16-2021,Stop and Shop,178.19,debit,Grocery shopping,Credit Card
 12-16-2021,Ace Hardware,241.01,debit,Grocery shopping,Credit Card
@@ -2424,7 +2424,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-31-2021,Mama-cita,71.13,debit,Restaurants,Credit Card
 12-31-2021,StandUp show,42.3,debit,Entertainment,Credit Card
 01-01-2022,Stop and Shop,223.6,debit,Grocery shopping,Credit Card
-01-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+01-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 01-01-2022,Eversource Electricity,61.98,debit,Utilities,Checking
 01-01-2022,National Grid Gas,76.38,debit,Utilities,Checking
 01-01-2022,Heating fuel,208.52,debit,Utilities,Checking
@@ -2475,7 +2475,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-11-2022,Stop and Shop,202.1,debit,Grocery shopping,Credit Card
 01-12-2022,Ace Hardware,227.08,debit,Grocery shopping,Credit Card
 01-13-2022,Uber,20.59,debit,Travel expenses,Credit Card
-01-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+01-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 01-13-2022,Amazon,80.48,debit,Shopping,Credit Card
 01-13-2022,Mall,35.37,debit,Shopping,Credit Card
 01-14-2022,Temu,69.3,debit,Shopping,Credit Card
@@ -2539,7 +2539,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-31-2022,MBTA,27.95,debit,Travel expenses,Credit Card
 01-31-2022,Trader Joes,198.08,debit,Grocery shopping,Credit Card
 01-31-2022,Credit Transaction,177.45,credit,Dividends,Savings
-02-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+02-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 02-01-2022,Eversource Electricity,78.47,debit,Utilities,Checking
 02-01-2022,National Grid Gas,67.75,debit,Utilities,Checking
 02-01-2022,Heating fuel,234.89,debit,Utilities,Checking
@@ -2575,7 +2575,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-11-2022,StandUp show,48.89,debit,Entertainment,Credit Card
 02-11-2022,AMC Boston,55.25,debit,Entertainment,Credit Card
 02-12-2022,Stop and Shop,182.79,debit,Grocery shopping,Credit Card
-02-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+02-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 02-14-2022,Ice skating,24.98,debit,Entertainment,Credit Card
 02-15-2022,Boston Shawarma,82.81,debit,Restaurants,Credit Card
 02-15-2022,Ace Hardware,171.17,debit,Grocery shopping,Credit Card
@@ -2618,7 +2618,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-28-2022,Market Basket,252.03,debit,Grocery shopping,Credit Card
 02-28-2022,Amazon,43.21,debit,Shopping,Credit Card
 02-28-2022,Ace Hardware,193.8,debit,Grocery shopping,Credit Card
-03-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+03-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 03-01-2022,Eversource Electricity,54.12,debit,Utilities,Checking
 03-01-2022,National Grid Gas,52.67,debit,Utilities,Checking
 03-01-2022,Heating fuel,159.95,debit,Utilities,Checking
@@ -2650,7 +2650,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-12-2022,Amazon,58.42,debit,Shopping,Credit Card
 03-12-2022,Karaoke,62.2,debit,Entertainment,Credit Card
 03-12-2022,Temu,65.24,debit,Shopping,Credit Card
-03-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+03-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 03-15-2022,Dominos,30.29,debit,Restaurants,Credit Card
 03-15-2022,MBTA,22.38,debit,Travel expenses,Credit Card
 03-15-2022,Boston Shawarma,59.29,debit,Restaurants,Credit Card
@@ -2696,7 +2696,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-29-2022,Amazon,71.97,debit,Shopping,Credit Card
 03-30-2022,Uber,17.22,debit,Travel expenses,Credit Card
 03-31-2022,Ace Hardware,183.57,debit,Grocery shopping,Credit Card
-04-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+04-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 04-01-2022,Eversource Electricity,51.13,debit,Utilities,Checking
 04-01-2022,National Grid Gas,71.64,debit,Utilities,Checking
 04-01-2022,Heating fuel,192.63,debit,Utilities,Checking
@@ -2719,7 +2719,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-04-2022,Ace Hardware,184.28,debit,Grocery shopping,Credit Card
 04-04-2022,Dominos,46.79,debit,Restaurants,Credit Card
 04-05-2022,Credit Transaction,78.22,credit,Dividends,Savings
-04-05-2022,Market Basket,197.0,debit,Grocery shopping,Credit Card
+04-05-2022,Market Basket,197,debit,Grocery shopping,Credit Card
 04-05-2022,AMC Boston,30.28,debit,Entertainment,Credit Card
 04-05-2022,Trader Joes,209.95,debit,Grocery shopping,Credit Card
 04-06-2022,Mama-cita,56.37,debit,Restaurants,Credit Card
@@ -2749,7 +2749,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-12-2022,AMC Boston,29.1,debit,Entertainment,Credit Card
 04-13-2022,Dominos,69.37,debit,Restaurants,Credit Card
 04-13-2022,Boston Shawarma,32.36,debit,Restaurants,Credit Card
-04-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+04-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 04-13-2022,Credit Transaction,8.79,credit,Cashback Rewards,Savings
 04-14-2022,Stop and Shop,240.54,debit,Grocery shopping,Credit Card
 04-14-2022,Karaoke,26.22,debit,Entertainment,Credit Card
@@ -2761,7 +2761,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-16-2022,Boston Shawarma,68.65,debit,Restaurants,Credit Card
 04-16-2022,Ace Hardware,236.76,debit,Grocery shopping,Credit Card
 04-17-2022,Temu,69.76,debit,Shopping,Credit Card
-04-17-2022,Lyft,17.0,debit,Travel expenses,Credit Card
+04-17-2022,Lyft,17,debit,Travel expenses,Credit Card
 04-17-2022,Boston Halal,30.17,debit,Restaurants,Credit Card
 04-17-2022,Boston Shawarma,48.07,debit,Restaurants,Credit Card
 04-18-2022,Temu,67.1,debit,Shopping,Credit Card
@@ -2821,7 +2821,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-29-2022,Stop and Shop,250.06,debit,Grocery shopping,Credit Card
 04-29-2022,Credit Transaction,184.13,credit,Dividends,Savings
 04-30-2022,Ice skating,56.12,debit,Entertainment,Credit Card
-05-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+05-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 05-01-2022,Eversource Electricity,59.73,debit,Utilities,Checking
 05-01-2022,National Grid Gas,56.93,debit,Utilities,Checking
 05-01-2022,Dominos,56.46,debit,Restaurants,Credit Card
@@ -2864,7 +2864,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-13-2022,Trader Joes,184.93,debit,Grocery shopping,Credit Card
 05-13-2022,Market Basket,200.1,debit,Grocery shopping,Credit Card
 05-13-2022,Mall,49.7,debit,Shopping,Credit Card
-05-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+05-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 05-14-2022,Temu,53.49,debit,Shopping,Credit Card
 05-14-2022,Stop and Shop,259.19,debit,Grocery shopping,Credit Card
 05-15-2022,Credit Transaction,9.43,credit,Cashback Rewards,Savings
@@ -2913,7 +2913,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-01-2022,Karaoke,65.82,debit,Entertainment,Credit Card
 06-01-2022,National Grid Gas,52.8,debit,Utilities,Checking
 06-01-2022,Temu,82.2,debit,Shopping,Credit Card
-06-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+06-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 06-01-2022,Eversource Electricity,58.42,debit,Utilities,Checking
 06-01-2022,AMC Boston,32.48,debit,Entertainment,Credit Card
 06-02-2022,AMC Boston,29.85,debit,Entertainment,Credit Card
@@ -2950,7 +2950,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-11-2022,Ace Hardware,230.21,debit,Grocery shopping,Credit Card
 06-12-2022,Amazon,22.86,debit,Shopping,Credit Card
 06-13-2022,Ice skating,42.28,debit,Entertainment,Credit Card
-06-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+06-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 06-14-2022,Market Basket,174.21,debit,Grocery shopping,Credit Card
 06-14-2022,Stop and Shop,248.77,debit,Grocery shopping,Credit Card
 06-15-2022,Karaoke,72.47,debit,Entertainment,Credit Card
@@ -3009,7 +3009,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-01-2022,Amazon,59.27,debit,Shopping,Credit Card
 07-01-2022,National Grid Gas,73.7,debit,Utilities,Checking
 07-01-2022,Temu,58.18,debit,Shopping,Credit Card
-07-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+07-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 07-01-2022,Eversource Electricity,71.56,debit,Utilities,Checking
 07-02-2022,Trader Joes,251.79,debit,Grocery shopping,Credit Card
 07-03-2022,Lyft,20.01,debit,Travel expenses,Credit Card
@@ -3047,7 +3047,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-12-2022,Mama-cita,48.56,debit,Restaurants,Credit Card
 07-12-2022,Boston Halal,26.84,debit,Restaurants,Credit Card
 07-13-2022,Boston Shawarma,40.85,debit,Restaurants,Credit Card
-07-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+07-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 07-13-2022,Boston Halal,47.39,debit,Restaurants,Credit Card
 07-13-2022,Credit Transaction,18.1,credit,Cashback Rewards,Savings
 07-13-2022,Stop and Shop,227.36,debit,Grocery shopping,Credit Card
@@ -3094,7 +3094,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-30-2022,MBTA,14.24,debit,Travel expenses,Credit Card
 07-30-2022,Credit Transaction,163.37,credit,Dividends,Savings
 07-31-2022,Trader Joes,222.97,debit,Grocery shopping,Credit Card
-08-01-2022,Rent/ Mortgage,1750.0,debit,Mortgage & Rent,Savings
+08-01-2022,Rent/ Mortgage,1750,debit,Mortgage & Rent,Savings
 08-01-2022,Eversource Electricity,73.13,debit,Utilities,Checking
 08-01-2022,National Grid Gas,71.41,debit,Utilities,Checking
 08-01-2022,Mama-cita,26.41,debit,Restaurants,Credit Card
@@ -3121,7 +3121,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-10-2022,Dominos,33.27,debit,Restaurants,Credit Card
 08-10-2022,Boston Halal,34.89,debit,Restaurants,Credit Card
 08-11-2022,Ace Hardware,177.24,debit,Grocery shopping,Credit Card
-08-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+08-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 08-14-2022,Stop and Shop,239.35,debit,Grocery shopping,Credit Card
 08-15-2022,MBTA,24.86,debit,Travel expenses,Credit Card
 08-15-2022,Mama-cita,44.11,debit,Restaurants,Credit Card
@@ -3137,7 +3137,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-19-2022,Karaoke,43.78,debit,Entertainment,Credit Card
 08-20-2022,MBTA,10.45,debit,Travel expenses,Credit Card
 08-20-2022,AMC Boston,72.06,debit,Entertainment,Credit Card
-08-20-2022,Boston Halal,46.0,debit,Restaurants,Credit Card
+08-20-2022,Boston Halal,46,debit,Restaurants,Credit Card
 08-20-2022,Uber,29.16,debit,Travel expenses,Credit Card
 08-21-2022,Market Basket,162.01,debit,Grocery shopping,Credit Card
 08-21-2022,Dominos,74.89,debit,Restaurants,Credit Card
@@ -3173,8 +3173,8 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-31-2022,Mall,46.76,debit,Shopping,Credit Card
 08-31-2022,Ace Hardware,185.9,debit,Grocery shopping,Credit Card
 08-31-2022,Stop and Shop,176.68,debit,Grocery shopping,Credit Card
-09-01-2022,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
-09-01-2022,Eversource Electricity,60.0,debit,Utilities,Checking
+09-01-2022,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
+09-01-2022,Eversource Electricity,60,debit,Utilities,Checking
 09-01-2022,National Grid Gas,53.75,debit,Utilities,Checking
 09-01-2022,Trader Joes,187.28,debit,Grocery shopping,Credit Card
 09-01-2022,AMC Boston,22.75,debit,Entertainment,Credit Card
@@ -3210,7 +3210,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-11-2022,Credit Transaction,12.45,credit,Cashback Rewards,Savings
 09-12-2022,MBTA,20.41,debit,Travel expenses,Credit Card
 09-13-2022,StandUp show,69.28,debit,Entertainment,Credit Card
-09-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+09-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 09-13-2022,MBTA,18.94,debit,Travel expenses,Credit Card
 09-14-2022,Temu,58.6,debit,Shopping,Credit Card
 09-14-2022,Mall,30.82,debit,Shopping,Credit Card
@@ -3262,7 +3262,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-29-2022,Boston Shawarma,74.56,debit,Restaurants,Credit Card
 09-29-2022,Temu,61.73,debit,Shopping,Credit Card
 09-30-2022,Ace Hardware,177.91,debit,Grocery shopping,Credit Card
-10-01-2022,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+10-01-2022,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 10-01-2022,Eversource Electricity,71.78,debit,Utilities,Checking
 10-01-2022,National Grid Gas,63.13,debit,Utilities,Checking
 10-01-2022,Heating fuel,222.05,debit,Utilities,Checking
@@ -3305,7 +3305,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-12-2022,Ace Hardware,244.67,debit,Grocery shopping,Credit Card
 10-13-2022,Stop and Shop,257.58,debit,Grocery shopping,Credit Card
 10-13-2022,StandUp show,72.58,debit,Entertainment,Credit Card
-10-13-2022,Monthly direct deposit - Salary,6427.0,credit,Salary,Savings
+10-13-2022,Monthly direct deposit - Salary,6427,credit,Salary,Savings
 10-13-2022,MBTA,25.47,debit,Travel expenses,Credit Card
 10-14-2022,MBTA,27.17,debit,Travel expenses,Credit Card
 10-14-2022,Mall,71.28,debit,Shopping,Credit Card
@@ -3376,7 +3376,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-31-2022,Ace Hardware,229.82,debit,Grocery shopping,Credit Card
 10-31-2022,Boston Shawarma,40.09,debit,Restaurants,Credit Card
 10-31-2022,Karaoke,30.6,debit,Entertainment,Credit Card
-11-01-2022,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+11-01-2022,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 11-01-2022,Eversource Electricity,55.17,debit,Utilities,Checking
 11-01-2022,National Grid Gas,63.33,debit,Utilities,Checking
 11-01-2022,Heating fuel,217.98,debit,Utilities,Checking
@@ -3405,7 +3405,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-07-2022,Dominos,46.22,debit,Restaurants,Credit Card
 11-07-2022,Ace Hardware,221.64,debit,Grocery shopping,Credit Card
 11-07-2022,MBTA,21.09,debit,Travel expenses,Credit Card
-11-07-2022,Mama-cita,67.0,debit,Restaurants,Credit Card
+11-07-2022,Mama-cita,67,debit,Restaurants,Credit Card
 11-08-2022,Uber,25.87,debit,Travel expenses,Credit Card
 11-08-2022,Market Basket,199.77,debit,Grocery shopping,Credit Card
 11-08-2022,Temu,29.62,debit,Shopping,Credit Card
@@ -3425,7 +3425,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-12-2022,Boston Shawarma,56.44,debit,Restaurants,Credit Card
 11-12-2022,Lyft,30.12,debit,Travel expenses,Credit Card
 11-12-2022,Trader Joes,231.06,debit,Grocery shopping,Credit Card
-11-13-2022,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+11-13-2022,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 11-13-2022,Amazon,36.13,debit,Shopping,Credit Card
 11-14-2022,Trader Joes,198.98,debit,Grocery shopping,Credit Card
 11-14-2022,AMC Boston,68.98,debit,Entertainment,Credit Card
@@ -3476,7 +3476,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-27-2022,Temu,22.26,debit,Shopping,Credit Card
 11-27-2022,Dominos,54.65,debit,Restaurants,Credit Card
 11-27-2022,Boston Halal,69.57,debit,Restaurants,Credit Card
-11-27-2022,Stop and Shop,204.0,debit,Grocery shopping,Credit Card
+11-27-2022,Stop and Shop,204,debit,Grocery shopping,Credit Card
 11-27-2022,Ace Hardware,237.07,debit,Grocery shopping,Credit Card
 11-27-2022,StandUp show,44.87,debit,Entertainment,Credit Card
 11-27-2022,Market Basket,181.47,debit,Grocery shopping,Credit Card
@@ -3491,9 +3491,9 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-30-2022,StandUp show,65.42,debit,Entertainment,Credit Card
 11-30-2022,Boston Halal,69.88,debit,Restaurants,Credit Card
 12-01-2022,Uber,23.34,debit,Travel expenses,Credit Card
-12-01-2022,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+12-01-2022,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 12-01-2022,Eversource Electricity,70.19,debit,Utilities,Checking
-12-01-2022,National Grid Gas,63.0,debit,Utilities,Checking
+12-01-2022,National Grid Gas,63,debit,Utilities,Checking
 12-01-2022,Heating fuel,222.19,debit,Utilities,Checking
 12-01-2022,Dominos,60.57,debit,Restaurants,Credit Card
 12-01-2022,Ice skating,56.1,debit,Entertainment,Credit Card
@@ -3535,7 +3535,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-11-2022,Boston Shawarma,68.71,debit,Restaurants,Credit Card
 12-11-2022,Stop and Shop,236.95,debit,Grocery shopping,Credit Card
 12-11-2022,Karaoke,43.64,debit,Entertainment,Credit Card
-12-13-2022,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+12-13-2022,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 12-13-2022,MBTA,15.86,debit,Travel expenses,Credit Card
 12-13-2022,Karaoke,22.15,debit,Entertainment,Credit Card
 12-14-2022,Ace Hardware,163.74,debit,Grocery shopping,Credit Card
@@ -3544,7 +3544,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-15-2022,Stop and Shop,195.43,debit,Grocery shopping,Credit Card
 12-15-2022,StandUp show,65.59,debit,Entertainment,Credit Card
 12-16-2022,Stop and Shop,200.98,debit,Grocery shopping,Credit Card
-12-16-2022,Ace Hardware,240.0,debit,Grocery shopping,Credit Card
+12-16-2022,Ace Hardware,240,debit,Grocery shopping,Credit Card
 12-16-2022,Market Basket,187.82,debit,Grocery shopping,Credit Card
 12-16-2022,Lyft,21.52,debit,Travel expenses,Credit Card
 12-16-2022,Credit Transaction,13.22,credit,Cashback Rewards,Savings
@@ -3598,7 +3598,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-01-2023,Mama-cita,31.94,debit,Restaurants,Credit Card
 01-01-2023,National Grid Gas,64.67,debit,Utilities,Checking
 01-01-2023,Eversource Electricity,58.15,debit,Utilities,Checking
-01-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+01-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 01-01-2023,Heating fuel,205.6,debit,Utilities,Checking
 01-02-2023,Mama-cita,42.95,debit,Restaurants,Credit Card
 01-03-2023,Boston Shawarma,60.61,debit,Restaurants,Credit Card
@@ -3641,7 +3641,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-12-2023,Market Basket,199.55,debit,Grocery shopping,Credit Card
 01-13-2023,MBTA,17.19,debit,Travel expenses,Credit Card
 01-13-2023,Trader Joes,224.91,debit,Grocery shopping,Credit Card
-01-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+01-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 01-13-2023,Temu,42.74,debit,Shopping,Credit Card
 01-14-2023,Lyft,23.85,debit,Travel expenses,Credit Card
 01-15-2023,Mall,23.89,debit,Shopping,Credit Card
@@ -3684,7 +3684,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-26-2023,Credit Transaction,6.74,credit,Cashback Rewards,Savings
 01-27-2023,AMC Boston,32.78,debit,Entertainment,Credit Card
 01-27-2023,Amazon,24.04,debit,Shopping,Credit Card
-01-27-2023,Boston Shawarma,74.0,debit,Restaurants,Credit Card
+01-27-2023,Boston Shawarma,74,debit,Restaurants,Credit Card
 01-27-2023,Mama-cita,82.26,debit,Restaurants,Credit Card
 01-27-2023,Lyft,22.31,debit,Travel expenses,Credit Card
 01-27-2023,Boston Halal,48.67,debit,Restaurants,Credit Card
@@ -3708,7 +3708,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-01-2023,Trader Joes,163.51,debit,Grocery shopping,Credit Card
 02-01-2023,National Grid Gas,71.05,debit,Utilities,Checking
 02-01-2023,Eversource Electricity,71.51,debit,Utilities,Checking
-02-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+02-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 02-02-2023,Dominos,42.72,debit,Restaurants,Credit Card
 02-02-2023,Stop and Shop,250.29,debit,Grocery shopping,Credit Card
 02-03-2023,StandUp show,71.4,debit,Entertainment,Credit Card
@@ -3740,7 +3740,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-12-2023,Stop and Shop,180.5,debit,Grocery shopping,Credit Card
 02-12-2023,Temu,25.74,debit,Shopping,Credit Card
 02-13-2023,MBTA,21.78,debit,Travel expenses,Credit Card
-02-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+02-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 02-13-2023,Boston Shawarma,43.94,debit,Restaurants,Credit Card
 02-13-2023,Uber,18.93,debit,Travel expenses,Credit Card
 02-14-2023,Trader Joes,165.09,debit,Grocery shopping,Credit Card
@@ -3759,7 +3759,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-17-2023,Temu,51.5,debit,Shopping,Credit Card
 02-17-2023,Amazon,52.77,debit,Shopping,Credit Card
 02-18-2023,Stop and Shop,198.21,debit,Grocery shopping,Credit Card
-02-18-2023,Boston Halal,65.0,debit,Restaurants,Credit Card
+02-18-2023,Boston Halal,65,debit,Restaurants,Credit Card
 02-18-2023,Market Basket,171.12,debit,Grocery shopping,Credit Card
 02-19-2023,Amazon,82.16,debit,Shopping,Credit Card
 02-19-2023,Boston Halal,56.91,debit,Restaurants,Credit Card
@@ -3790,7 +3790,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-28-2023,Boston Shawarma,32.18,debit,Restaurants,Credit Card
 02-28-2023,Dominos,42.33,debit,Restaurants,Credit Card
 02-28-2023,Stop and Shop,208.29,debit,Grocery shopping,Credit Card
-03-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+03-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 03-01-2023,Eversource Electricity,77.2,debit,Utilities,Checking
 03-01-2023,National Grid Gas,66.7,debit,Utilities,Checking
 03-01-2023,Heating fuel,151.53,debit,Utilities,Checking
@@ -3815,7 +3815,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-13-2023,Boston Shawarma,61.81,debit,Restaurants,Credit Card
 03-13-2023,Ice skating,29.79,debit,Entertainment,Credit Card
 03-13-2023,Karaoke,56.24,debit,Entertainment,Credit Card
-03-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+03-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 03-13-2023,Market Basket,255.36,debit,Grocery shopping,Credit Card
 03-13-2023,StandUp show,34.9,debit,Entertainment,Credit Card
 03-14-2023,Lyft,16.31,debit,Travel expenses,Credit Card
@@ -3867,7 +3867,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-31-2023,Stop and Shop,215.92,debit,Grocery shopping,Credit Card
 03-31-2023,Credit Transaction,10.79,credit,Cashback Rewards,Savings
 04-01-2023,AMC Boston,24.16,debit,Entertainment,Credit Card
-04-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+04-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 04-01-2023,Eversource Electricity,60.67,debit,Utilities,Checking
 04-01-2023,National Grid Gas,64.06,debit,Utilities,Checking
 04-01-2023,Heating fuel,223.93,debit,Utilities,Checking
@@ -3909,7 +3909,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-10-2023,Boston Shawarma,72.76,debit,Restaurants,Credit Card
 04-10-2023,Uber,15.16,debit,Travel expenses,Credit Card
 04-10-2023,Credit Transaction,163.9,credit,Dividends,Savings
-04-10-2023,Mama-cita,61.0,debit,Restaurants,Credit Card
+04-10-2023,Mama-cita,61,debit,Restaurants,Credit Card
 04-11-2023,Ace Hardware,199.06,debit,Grocery shopping,Credit Card
 04-11-2023,Mall,21.52,debit,Shopping,Credit Card
 04-11-2023,Mama-cita,71.8,debit,Restaurants,Credit Card
@@ -3919,7 +3919,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-12-2023,AMC Boston,39.33,debit,Entertainment,Credit Card
 04-12-2023,Boston Shawarma,32.62,debit,Restaurants,Credit Card
 04-13-2023,Market Basket,226.22,debit,Grocery shopping,Credit Card
-04-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+04-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 04-13-2023,Trader Joes,186.15,debit,Grocery shopping,Credit Card
 04-14-2023,Credit Transaction,19.5,credit,Cashback Rewards,Savings
 04-14-2023,Boston Halal,59.87,debit,Restaurants,Credit Card
@@ -3988,7 +3988,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-30-2023,Lyft,14.24,debit,Travel expenses,Credit Card
 04-30-2023,Ace Hardware,175.01,debit,Grocery shopping,Credit Card
 05-01-2023,Ace Hardware,219.68,debit,Grocery shopping,Credit Card
-05-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+05-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 05-01-2023,Eversource Electricity,74.66,debit,Utilities,Checking
 05-01-2023,National Grid Gas,72.41,debit,Utilities,Checking
 05-01-2023,MBTA,18.93,debit,Travel expenses,Credit Card
@@ -4019,7 +4019,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-13-2023,Uber,21.01,debit,Travel expenses,Credit Card
 05-13-2023,Mall,38.63,debit,Shopping,Credit Card
 05-13-2023,Amazon,54.08,debit,Shopping,Credit Card
-05-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+05-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 05-14-2023,Boston Halal,49.54,debit,Restaurants,Credit Card
 05-14-2023,Ace Hardware,252.35,debit,Grocery shopping,Credit Card
 05-15-2023,Boston Halal,56.79,debit,Restaurants,Credit Card
@@ -4064,7 +4064,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-31-2023,Boston Shawarma,49.36,debit,Restaurants,Credit Card
 05-31-2023,MBTA,17.56,debit,Travel expenses,Credit Card
 05-31-2023,Ace Hardware,254.48,debit,Grocery shopping,Credit Card
-06-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+06-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 06-01-2023,Eversource Electricity,52.86,debit,Utilities,Checking
 06-01-2023,National Grid Gas,71.39,debit,Utilities,Checking
 06-01-2023,Boston Halal,31.36,debit,Restaurants,Credit Card
@@ -4110,7 +4110,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-13-2023,Boston Halal,41.61,debit,Restaurants,Credit Card
 06-13-2023,Mall,37.48,debit,Shopping,Credit Card
 06-13-2023,Boston Shawarma,51.92,debit,Restaurants,Credit Card
-06-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+06-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 06-13-2023,Ace Hardware,252.08,debit,Grocery shopping,Credit Card
 06-14-2023,Ice skating,65.79,debit,Entertainment,Credit Card
 06-14-2023,Ace Hardware,211.22,debit,Grocery shopping,Credit Card
@@ -4147,7 +4147,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-20-2023,Dominos,78.92,debit,Restaurants,Credit Card
 06-21-2023,AMC Boston,50.28,debit,Entertainment,Credit Card
 06-21-2023,Boston Halal,32.88,debit,Restaurants,Credit Card
-06-21-2023,Temu,77.0,debit,Shopping,Credit Card
+06-21-2023,Temu,77,debit,Shopping,Credit Card
 06-21-2023,StandUp show,69.69,debit,Entertainment,Credit Card
 06-21-2023,Dominos,33.03,debit,Restaurants,Credit Card
 06-22-2023,Mama-cita,50.56,debit,Restaurants,Credit Card
@@ -4187,7 +4187,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-30-2023,AMC Boston,69.6,debit,Entertainment,Credit Card
 06-30-2023,Credit Transaction,4.23,credit,Cashback Rewards,Savings
 06-30-2023,Ace Hardware,244.75,debit,Grocery shopping,Credit Card
-07-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+07-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 07-01-2023,Eversource Electricity,75.2,debit,Utilities,Checking
 07-01-2023,National Grid Gas,64.04,debit,Utilities,Checking
 07-01-2023,Ace Hardware,228.96,debit,Grocery shopping,Credit Card
@@ -4231,7 +4231,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-12-2023,Dominos,59.05,debit,Restaurants,Credit Card
 07-13-2023,Stop and Shop,178.33,debit,Grocery shopping,Credit Card
 07-13-2023,Lyft,18.5,debit,Travel expenses,Credit Card
-07-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+07-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 07-13-2023,Temu,32.87,debit,Shopping,Credit Card
 07-13-2023,Market Basket,186.24,debit,Grocery shopping,Credit Card
 07-13-2023,Boston Shawarma,52.61,debit,Restaurants,Credit Card
@@ -4296,7 +4296,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-31-2023,Dominos,66.38,debit,Restaurants,Credit Card
 07-31-2023,Mall,63.69,debit,Shopping,Credit Card
 07-31-2023,Uber,25.6,debit,Travel expenses,Credit Card
-08-01-2023,Rent/ Mortgage,2000.0,debit,Mortgage & Rent,Savings
+08-01-2023,Rent/ Mortgage,2000,debit,Mortgage & Rent,Savings
 08-01-2023,Eversource Electricity,70.79,debit,Utilities,Checking
 08-01-2023,National Grid Gas,78.2,debit,Utilities,Checking
 08-01-2023,Dominos,37.85,debit,Restaurants,Credit Card
@@ -4326,7 +4326,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-09-2023,Boston Shawarma,50.3,debit,Restaurants,Credit Card
 08-10-2023,Ice skating,54.49,debit,Entertainment,Credit Card
 08-11-2023,Lyft,29.88,debit,Travel expenses,Credit Card
-08-11-2023,Uber,15.0,debit,Travel expenses,Credit Card
+08-11-2023,Uber,15,debit,Travel expenses,Credit Card
 08-11-2023,Karaoke,59.04,debit,Entertainment,Credit Card
 08-11-2023,Ace Hardware,260.19,debit,Grocery shopping,Credit Card
 08-12-2023,Boston Shawarma,44.41,debit,Restaurants,Credit Card
@@ -4336,7 +4336,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-12-2023,Mall,25.87,debit,Shopping,Credit Card
 08-12-2023,Mama-cita,61.19,debit,Restaurants,Credit Card
 08-13-2023,Boston Halal,80.87,debit,Restaurants,Credit Card
-08-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+08-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 08-14-2023,Dominos,74.06,debit,Restaurants,Credit Card
 08-14-2023,Mall,79.17,debit,Shopping,Credit Card
 08-14-2023,Uber,11.52,debit,Travel expenses,Credit Card
@@ -4389,7 +4389,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-28-2023,Stop and Shop,167.66,debit,Grocery shopping,Credit Card
 08-28-2023,Boston Shawarma,47.72,debit,Restaurants,Credit Card
 08-28-2023,MBTA,29.37,debit,Travel expenses,Credit Card
-08-29-2023,Mama-cita,80.0,debit,Restaurants,Credit Card
+08-29-2023,Mama-cita,80,debit,Restaurants,Credit Card
 08-29-2023,Market Basket,188.47,debit,Grocery shopping,Credit Card
 08-29-2023,Lyft,13.6,debit,Travel expenses,Credit Card
 08-29-2023,Boston Shawarma,64.89,debit,Restaurants,Credit Card
@@ -4406,7 +4406,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-31-2023,Trader Joes,233.19,debit,Grocery shopping,Credit Card
 08-31-2023,Ace Hardware,254.09,debit,Grocery shopping,Credit Card
 09-01-2023,Ace Hardware,200.11,debit,Grocery shopping,Credit Card
-09-01-2023,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+09-01-2023,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 09-01-2023,Eversource Electricity,76.82,debit,Utilities,Checking
 09-01-2023,National Grid Gas,61.41,debit,Utilities,Checking
 09-01-2023,Uber,11.88,debit,Travel expenses,Credit Card
@@ -4417,7 +4417,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-02-2023,Ice skating,57.48,debit,Entertainment,Credit Card
 09-03-2023,Boston Shawarma,50.14,debit,Restaurants,Credit Card
 09-03-2023,Boston Halal,75.43,debit,Restaurants,Credit Card
-09-04-2023,Trader Joes,175.0,debit,Grocery shopping,Credit Card
+09-04-2023,Trader Joes,175,debit,Grocery shopping,Credit Card
 09-04-2023,Lyft,27.11,debit,Travel expenses,Credit Card
 09-04-2023,Uber,16.04,debit,Travel expenses,Credit Card
 09-05-2023,Dominos,63.33,debit,Restaurants,Credit Card
@@ -4449,7 +4449,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-13-2023,Amazon,37.48,debit,Shopping,Credit Card
 09-13-2023,Credit Transaction,9.38,credit,Cashback Rewards,Savings
 09-13-2023,Dominos,47.61,debit,Restaurants,Credit Card
-09-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+09-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 09-13-2023,Mall,36.85,debit,Shopping,Credit Card
 09-14-2023,Uber,16.04,debit,Travel expenses,Credit Card
 09-14-2023,StandUp show,66.47,debit,Entertainment,Credit Card
@@ -4513,7 +4513,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-30-2023,Market Basket,225.94,debit,Grocery shopping,Credit Card
 09-30-2023,MBTA,28.49,debit,Travel expenses,Credit Card
 09-30-2023,Mama-cita,59.41,debit,Restaurants,Credit Card
-10-01-2023,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+10-01-2023,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 10-01-2023,Eversource Electricity,76.96,debit,Utilities,Checking
 10-01-2023,National Grid Gas,58.52,debit,Utilities,Checking
 10-01-2023,Heating fuel,186.76,debit,Utilities,Checking
@@ -4570,7 +4570,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-12-2023,Ace Hardware,207.97,debit,Grocery shopping,Credit Card
 10-12-2023,Mall,62.61,debit,Shopping,Credit Card
 10-12-2023,Credit Transaction,3.59,credit,Cashback Rewards,Savings
-10-13-2023,Monthly direct deposit - Salary,6620.0,credit,Salary,Savings
+10-13-2023,Monthly direct deposit - Salary,6620,credit,Salary,Savings
 10-13-2023,Ace Hardware,256.98,debit,Grocery shopping,Credit Card
 10-13-2023,Ice skating,71.13,debit,Entertainment,Credit Card
 10-13-2023,Karaoke,68.77,debit,Entertainment,Credit Card
@@ -4633,7 +4633,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-31-2023,Stop and Shop,226.24,debit,Grocery shopping,Credit Card
 10-31-2023,AMC Boston,27.73,debit,Entertainment,Credit Card
 10-31-2023,Dominos,73.88,debit,Restaurants,Credit Card
-11-01-2023,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+11-01-2023,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 11-01-2023,Eversource Electricity,51.5,debit,Utilities,Checking
 11-01-2023,National Grid Gas,65.58,debit,Utilities,Checking
 11-01-2023,Heating fuel,196.28,debit,Utilities,Checking
@@ -4671,7 +4671,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-12-2023,Ice skating,39.12,debit,Entertainment,Credit Card
 11-12-2023,Boston Shawarma,30.4,debit,Restaurants,Credit Card
 11-12-2023,Boston Halal,61.35,debit,Restaurants,Credit Card
-11-13-2023,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+11-13-2023,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 11-13-2023,Mall,80.58,debit,Shopping,Credit Card
 11-13-2023,MBTA,27.14,debit,Travel expenses,Credit Card
 11-14-2023,Dominos,82.68,debit,Restaurants,Credit Card
@@ -4679,7 +4679,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-14-2023,Stop and Shop,174.93,debit,Grocery shopping,Credit Card
 11-15-2023,MBTA,13.68,debit,Travel expenses,Credit Card
 11-15-2023,Karaoke,52.43,debit,Entertainment,Credit Card
-11-16-2023,Trader Joes,204.0,debit,Grocery shopping,Credit Card
+11-16-2023,Trader Joes,204,debit,Grocery shopping,Credit Card
 11-16-2023,Mama-cita,42.32,debit,Restaurants,Credit Card
 11-16-2023,MBTA,23.52,debit,Travel expenses,Credit Card
 11-16-2023,Lyft,23.48,debit,Travel expenses,Credit Card
@@ -4726,7 +4726,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-30-2023,Lyft,27.47,debit,Travel expenses,Credit Card
 11-30-2023,Temu,47.23,debit,Shopping,Credit Card
 12-01-2023,Lyft,11.27,debit,Travel expenses,Credit Card
-12-01-2023,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+12-01-2023,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 12-01-2023,Eversource Electricity,63.05,debit,Utilities,Checking
 12-01-2023,National Grid Gas,72.32,debit,Utilities,Checking
 12-01-2023,Heating fuel,208.34,debit,Utilities,Checking
@@ -4762,7 +4762,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-12-2023,Boston Halal,43.82,debit,Restaurants,Credit Card
 12-12-2023,Market Basket,182.35,debit,Grocery shopping,Credit Card
 12-13-2023,Ace Hardware,197.02,debit,Grocery shopping,Credit Card
-12-13-2023,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+12-13-2023,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 12-13-2023,AMC Boston,37.48,debit,Entertainment,Credit Card
 12-13-2023,Mall,73.86,debit,Shopping,Credit Card
 12-13-2023,Karaoke,52.48,debit,Entertainment,Credit Card
@@ -4827,14 +4827,14 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-29-2023,Uber,15.18,debit,Travel expenses,Credit Card
 12-30-2023,Stop and Shop,214.46,debit,Grocery shopping,Credit Card
 12-30-2023,Trader Joes,178.08,debit,Grocery shopping,Credit Card
-12-30-2023,Ace Hardware,191.0,debit,Grocery shopping,Credit Card
+12-30-2023,Ace Hardware,191,debit,Grocery shopping,Credit Card
 12-30-2023,Boston Shawarma,42.77,debit,Restaurants,Credit Card
 12-30-2023,Dominos,40.65,debit,Restaurants,Credit Card
 12-31-2023,Mall,79.45,debit,Shopping,Credit Card
 12-31-2023,Market Basket,251.78,debit,Grocery shopping,Credit Card
 12-31-2023,Ice skating,44.91,debit,Entertainment,Credit Card
 01-01-2024,Trader Joes,215.78,debit,Grocery shopping,Credit Card
-01-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+01-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 01-01-2024,Eversource Electricity,52.19,debit,Utilities,Checking
 01-01-2024,National Grid Gas,63.08,debit,Utilities,Checking
 01-01-2024,Heating fuel,209.3,debit,Utilities,Checking
@@ -4857,7 +4857,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-06-2024,StandUp show,28.47,debit,Entertainment,Credit Card
 01-06-2024,MBTA,27.63,debit,Travel expenses,Credit Card
 01-06-2024,Dominos,59.43,debit,Restaurants,Credit Card
-01-06-2024,Mama-cita,51.0,debit,Restaurants,Credit Card
+01-06-2024,Mama-cita,51,debit,Restaurants,Credit Card
 01-07-2024,AMC Boston,26.42,debit,Entertainment,Credit Card
 01-07-2024,Credit Transaction,17.93,credit,Cashback Rewards,Savings
 01-07-2024,Amazon,36.17,debit,Shopping,Credit Card
@@ -4880,17 +4880,17 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-12-2024,Lyft,11.19,debit,Travel expenses,Credit Card
 01-13-2024,AMC Boston,51.78,debit,Entertainment,Credit Card
 01-13-2024,Uber,26.08,debit,Travel expenses,Credit Card
-01-13-2024,Amazon,79.0,debit,Shopping,Credit Card
+01-13-2024,Amazon,79,debit,Shopping,Credit Card
 01-13-2024,Lyft,12.64,debit,Travel expenses,Credit Card
 01-13-2024,Market Basket,237.91,debit,Grocery shopping,Credit Card
 01-13-2024,Temu,47.32,debit,Shopping,Credit Card
-01-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+01-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 01-14-2024,Mall,47.93,debit,Shopping,Credit Card
 01-14-2024,Ace Hardware,223.96,debit,Grocery shopping,Credit Card
 01-15-2024,Boston Shawarma,31.17,debit,Restaurants,Credit Card
 01-15-2024,Ace Hardware,190.44,debit,Grocery shopping,Credit Card
 01-15-2024,Market Basket,225.59,debit,Grocery shopping,Credit Card
-01-16-2024,Trader Joes,182.0,debit,Grocery shopping,Credit Card
+01-16-2024,Trader Joes,182,debit,Grocery shopping,Credit Card
 01-16-2024,Market Basket,217.56,debit,Grocery shopping,Credit Card
 01-17-2024,MBTA,19.4,debit,Travel expenses,Credit Card
 01-17-2024,Uber,27.94,debit,Travel expenses,Credit Card
@@ -4951,7 +4951,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 01-31-2024,Credit Transaction,10.29,credit,Cashback Rewards,Savings
 01-31-2024,Karaoke,22.73,debit,Entertainment,Credit Card
 01-31-2024,Amazon,71.26,debit,Shopping,Credit Card
-02-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+02-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 02-01-2024,Eversource Electricity,53.54,debit,Utilities,Checking
 02-01-2024,National Grid Gas,63.63,debit,Utilities,Checking
 02-01-2024,Heating fuel,217.65,debit,Utilities,Checking
@@ -4992,7 +4992,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-11-2024,Market Basket,235.27,debit,Grocery shopping,Credit Card
 02-12-2024,Uber,29.86,debit,Travel expenses,Credit Card
 02-12-2024,MBTA,30.19,debit,Travel expenses,Credit Card
-02-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+02-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 02-14-2024,Credit Transaction,11.32,credit,Cashback Rewards,Savings
 02-14-2024,Boston Halal,66.76,debit,Restaurants,Credit Card
 02-14-2024,Mall,70.99,debit,Shopping,Credit Card
@@ -5029,7 +5029,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 02-29-2024,Credit Transaction,150.45,credit,Dividends,Savings
 02-29-2024,Credit Transaction,10.58,credit,Cashback Rewards,Savings
 03-01-2024,Boston Shawarma,61.34,debit,Restaurants,Credit Card
-03-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+03-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 03-01-2024,Eversource Electricity,73.68,debit,Utilities,Checking
 03-01-2024,National Grid Gas,76.01,debit,Utilities,Checking
 03-01-2024,Heating fuel,244.03,debit,Utilities,Checking
@@ -5042,7 +5042,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-02-2024,Uber,17.9,debit,Travel expenses,Credit Card
 03-02-2024,Market Basket,157.87,debit,Grocery shopping,Credit Card
 03-03-2024,Trader Joes,197.53,debit,Grocery shopping,Credit Card
-03-03-2024,Ace Hardware,240.0,debit,Grocery shopping,Credit Card
+03-03-2024,Ace Hardware,240,debit,Grocery shopping,Credit Card
 03-03-2024,MBTA,22.45,debit,Travel expenses,Credit Card
 03-03-2024,Stop and Shop,234.04,debit,Grocery shopping,Credit Card
 03-04-2024,Ace Hardware,253.48,debit,Grocery shopping,Credit Card
@@ -5074,7 +5074,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-12-2024,Uber,15.25,debit,Travel expenses,Credit Card
 03-12-2024,AMC Boston,22.62,debit,Entertainment,Credit Card
 03-13-2024,MBTA,14.6,debit,Travel expenses,Credit Card
-03-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+03-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 03-13-2024,Stop and Shop,198.76,debit,Grocery shopping,Credit Card
 03-13-2024,Ace Hardware,207.05,debit,Grocery shopping,Credit Card
 03-13-2024,Credit Transaction,7.94,credit,Cashback Rewards,Savings
@@ -5144,7 +5144,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 03-31-2024,Ice skating,55.51,debit,Entertainment,Credit Card
 03-31-2024,Boston Shawarma,31.94,debit,Restaurants,Credit Card
 03-31-2024,Lyft,29.19,debit,Travel expenses,Credit Card
-04-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+04-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 04-01-2024,Eversource Electricity,62.31,debit,Utilities,Checking
 04-01-2024,National Grid Gas,78.97,debit,Utilities,Checking
 04-01-2024,Heating fuel,234.74,debit,Utilities,Checking
@@ -5181,7 +5181,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-12-2024,Mama-cita,62.51,debit,Restaurants,Credit Card
 04-12-2024,Karaoke,42.85,debit,Entertainment,Credit Card
 04-13-2024,MBTA,30.03,debit,Travel expenses,Credit Card
-04-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+04-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 04-13-2024,Mama-cita,54.28,debit,Restaurants,Credit Card
 04-13-2024,Uber,10.71,debit,Travel expenses,Credit Card
 04-13-2024,Dominos,64.42,debit,Restaurants,Credit Card
@@ -5222,7 +5222,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 04-30-2024,Temu,84.19,debit,Shopping,Credit Card
 04-30-2024,Mama-cita,41.7,debit,Restaurants,Credit Card
 04-30-2024,Ace Hardware,214.95,debit,Grocery shopping,Credit Card
-05-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+05-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 05-01-2024,Eversource Electricity,69.42,debit,Utilities,Checking
 05-01-2024,National Grid Gas,60.56,debit,Utilities,Checking
 05-01-2024,Boston Halal,29.78,debit,Restaurants,Credit Card
@@ -5269,7 +5269,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-12-2024,Ace Hardware,194.42,debit,Grocery shopping,Credit Card
 05-12-2024,Credit Transaction,12.24,credit,Cashback Rewards,Savings
 05-12-2024,Mall,74.18,debit,Shopping,Credit Card
-05-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+05-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 05-13-2024,Mall,48.59,debit,Shopping,Credit Card
 05-13-2024,Stop and Shop,225.58,debit,Grocery shopping,Credit Card
 05-13-2024,Boston Halal,82.14,debit,Restaurants,Credit Card
@@ -5315,7 +5315,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-23-2024,Ice skating,24.59,debit,Entertainment,Credit Card
 05-24-2024,Ace Hardware,260.15,debit,Grocery shopping,Credit Card
 05-24-2024,Mall,44.84,debit,Shopping,Credit Card
-05-24-2024,MBTA,21.0,debit,Travel expenses,Credit Card
+05-24-2024,MBTA,21,debit,Travel expenses,Credit Card
 05-24-2024,Trader Joes,226.14,debit,Grocery shopping,Credit Card
 05-24-2024,Amazon,40.86,debit,Shopping,Credit Card
 05-24-2024,Temu,50.21,debit,Shopping,Credit Card
@@ -5345,7 +5345,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 05-31-2024,Boston Shawarma,31.86,debit,Restaurants,Credit Card
 05-31-2024,Ace Hardware,169.33,debit,Grocery shopping,Credit Card
 05-31-2024,Boston Halal,83.49,debit,Restaurants,Credit Card
-06-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+06-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 06-01-2024,Eversource Electricity,52.14,debit,Utilities,Checking
 06-01-2024,National Grid Gas,67.61,debit,Utilities,Checking
 06-01-2024,Stop and Shop,249.18,debit,Grocery shopping,Credit Card
@@ -5383,7 +5383,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-11-2024,Ace Hardware,162.43,debit,Grocery shopping,Credit Card
 06-12-2024,Credit Transaction,125.89,credit,Dividends,Savings
 06-12-2024,Market Basket,196.97,debit,Grocery shopping,Credit Card
-06-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+06-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 06-14-2024,Trader Joes,220.05,debit,Grocery shopping,Credit Card
 06-14-2024,Mall,80.27,debit,Shopping,Credit Card
 06-14-2024,Ice skating,45.49,debit,Entertainment,Credit Card
@@ -5435,7 +5435,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 06-30-2024,Trader Joes,232.52,debit,Grocery shopping,Credit Card
 06-30-2024,Ace Hardware,162.99,debit,Grocery shopping,Credit Card
 06-30-2024,Market Basket,200.1,debit,Grocery shopping,Credit Card
-07-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+07-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 07-01-2024,Eversource Electricity,55.97,debit,Utilities,Checking
 07-01-2024,National Grid Gas,72.26,debit,Utilities,Checking
 07-01-2024,Credit Transaction,7.93,credit,Cashback Rewards,Savings
@@ -5474,7 +5474,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-12-2024,Ice skating,28.34,debit,Entertainment,Credit Card
 07-12-2024,StandUp show,70.47,debit,Entertainment,Credit Card
 07-13-2024,Market Basket,259.18,debit,Grocery shopping,Credit Card
-07-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+07-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 07-13-2024,Trader Joes,203.55,debit,Grocery shopping,Credit Card
 07-14-2024,Boston Halal,69.94,debit,Restaurants,Credit Card
 07-14-2024,Credit Transaction,132.21,credit,Dividends,Savings
@@ -5530,7 +5530,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 07-31-2024,Boston Shawarma,40.81,debit,Restaurants,Credit Card
 07-31-2024,AMC Boston,66.93,debit,Entertainment,Credit Card
 08-01-2024,Credit Transaction,186.35,credit,Dividends,Savings
-08-01-2024,Rent/ Mortgage,2250.0,debit,Mortgage & Rent,Savings
+08-01-2024,Rent/ Mortgage,2250,debit,Mortgage & Rent,Savings
 08-01-2024,Eversource Electricity,69.4,debit,Utilities,Checking
 08-01-2024,National Grid Gas,52.07,debit,Utilities,Checking
 08-01-2024,Boston Halal,64.37,debit,Restaurants,Credit Card
@@ -5539,7 +5539,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-03-2024,Dominos,58.45,debit,Restaurants,Credit Card
 08-04-2024,Boston Halal,59.84,debit,Restaurants,Credit Card
 08-04-2024,Market Basket,203.26,debit,Grocery shopping,Credit Card
-08-04-2024,Boston Shawarma,47.0,debit,Restaurants,Credit Card
+08-04-2024,Boston Shawarma,47,debit,Restaurants,Credit Card
 08-04-2024,Amazon,55.81,debit,Shopping,Credit Card
 08-04-2024,StandUp show,53.28,debit,Entertainment,Credit Card
 08-05-2024,Stop and Shop,215.72,debit,Grocery shopping,Credit Card
@@ -5560,7 +5560,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-12-2024,Lyft,26.77,debit,Travel expenses,Credit Card
 08-13-2024,Boston Halal,75.23,debit,Restaurants,Credit Card
 08-13-2024,Dominos,26.27,debit,Restaurants,Credit Card
-08-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+08-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 08-14-2024,Stop and Shop,210.78,debit,Grocery shopping,Credit Card
 08-14-2024,Market Basket,240.05,debit,Grocery shopping,Credit Card
 08-14-2024,Temu,52.59,debit,Shopping,Credit Card
@@ -5606,7 +5606,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 08-30-2024,Dominos,76.46,debit,Restaurants,Credit Card
 08-30-2024,Credit Transaction,12.46,credit,Cashback Rewards,Savings
 08-30-2024,MBTA,25.93,debit,Travel expenses,Credit Card
-09-01-2024,Rent/ Mortgage,2500.0,debit,Mortgage & Rent,Savings
+09-01-2024,Rent/ Mortgage,2500,debit,Mortgage & Rent,Savings
 09-01-2024,Eversource Electricity,67.64,debit,Utilities,Checking
 09-01-2024,National Grid Gas,67.59,debit,Utilities,Checking
 09-01-2024,Temu,79.28,debit,Shopping,Credit Card
@@ -5651,11 +5651,11 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 09-12-2024,Ice skating,48.35,debit,Entertainment,Credit Card
 09-12-2024,Mall,81.87,debit,Shopping,Credit Card
 09-13-2024,Boston Halal,58.85,debit,Restaurants,Credit Card
-09-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+09-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 09-13-2024,Dominos,56.48,debit,Restaurants,Credit Card
 09-14-2024,Uber,28.73,debit,Travel expenses,Credit Card
 09-15-2024,AMC Boston,73.4,debit,Entertainment,Credit Card
-09-15-2024,Mama-cita,64.0,debit,Restaurants,Credit Card
+09-15-2024,Mama-cita,64,debit,Restaurants,Credit Card
 09-15-2024,Ice skating,32.11,debit,Entertainment,Credit Card
 09-15-2024,Boston Halal,36.8,debit,Restaurants,Credit Card
 09-16-2024,Amazon,51.93,debit,Shopping,Credit Card
@@ -5704,13 +5704,13 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-01-2024,Stop and Shop,239.51,debit,Grocery shopping,Credit Card
 10-01-2024,Uber,24.89,debit,Travel expenses,Credit Card
 10-01-2024,AMC Boston,24.09,debit,Entertainment,Credit Card
-10-01-2024,Heating fuel,207.0,debit,Utilities,Checking
-10-01-2024,Rent/ Mortgage,2500.0,debit,Mortgage & Rent,Savings
+10-01-2024,Heating fuel,207,debit,Utilities,Checking
+10-01-2024,Rent/ Mortgage,2500,debit,Mortgage & Rent,Savings
 10-01-2024,National Grid Gas,61.83,debit,Utilities,Checking
 10-01-2024,Eversource Electricity,52.99,debit,Utilities,Checking
 10-02-2024,StandUp show,31.79,debit,Entertainment,Credit Card
 10-03-2024,Mall,81.76,debit,Shopping,Credit Card
-10-03-2024,Market Basket,174.0,debit,Grocery shopping,Credit Card
+10-03-2024,Market Basket,174,debit,Grocery shopping,Credit Card
 10-03-2024,Temu,81.83,debit,Shopping,Credit Card
 10-03-2024,Trader Joes,185.45,debit,Grocery shopping,Credit Card
 10-03-2024,Amazon,76.14,debit,Shopping,Credit Card
@@ -5724,7 +5724,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-08-2024,Trader Joes,238.46,debit,Grocery shopping,Credit Card
 10-08-2024,Uber,12.12,debit,Travel expenses,Credit Card
 10-08-2024,MBTA,28.34,debit,Travel expenses,Credit Card
-10-09-2024,Stop and Shop,192.0,debit,Grocery shopping,Credit Card
+10-09-2024,Stop and Shop,192,debit,Grocery shopping,Credit Card
 10-09-2024,Market Basket,219.48,debit,Grocery shopping,Credit Card
 10-10-2024,Credit Transaction,4.67,credit,Cashback Rewards,Savings
 10-10-2024,Amazon,32.94,debit,Shopping,Credit Card
@@ -5737,7 +5737,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-13-2024,Boston Shawarma,31.16,debit,Restaurants,Credit Card
 10-13-2024,Ice skating,34.01,debit,Entertainment,Credit Card
 10-13-2024,Temu,77.71,debit,Shopping,Credit Card
-10-13-2024,Monthly direct deposit - Salary,9930.0,credit,Salary,Savings
+10-13-2024,Monthly direct deposit - Salary,9930,credit,Salary,Savings
 10-13-2024,Mama-cita,57.19,debit,Restaurants,Credit Card
 10-13-2024,Stop and Shop,176.22,debit,Grocery shopping,Credit Card
 10-14-2024,StandUp show,55.02,debit,Entertainment,Credit Card
@@ -5786,7 +5786,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 10-31-2024,MBTA,13.33,debit,Travel expenses,Credit Card
 10-31-2024,Trader Joes,235.11,debit,Grocery shopping,Credit Card
 11-01-2024,Market Basket,191.07,debit,Grocery shopping,Credit Card
-11-01-2024,Rent/ Mortgage,2500.0,debit,Mortgage & Rent,Savings
+11-01-2024,Rent/ Mortgage,2500,debit,Mortgage & Rent,Savings
 11-01-2024,Eversource Electricity,69.88,debit,Utilities,Checking
 11-01-2024,National Grid Gas,75.72,debit,Utilities,Checking
 11-01-2024,Heating fuel,222.53,debit,Utilities,Checking
@@ -5820,11 +5820,11 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-12-2024,Lyft,15.11,debit,Travel expenses,Credit Card
 11-12-2024,Temu,72.32,debit,Shopping,Credit Card
 11-12-2024,Stop and Shop,238.03,debit,Grocery shopping,Credit Card
-11-12-2024,Uber,15.0,debit,Travel expenses,Credit Card
+11-12-2024,Uber,15,debit,Travel expenses,Credit Card
 11-13-2024,Lyft,10.61,debit,Travel expenses,Credit Card
 11-13-2024,Credit Transaction,19.71,credit,Cashback Rewards,Savings
 11-13-2024,Uber,25.98,debit,Travel expenses,Credit Card
-11-13-2024,Monthly direct deposit - Salary,10327.0,credit,Salary,Savings
+11-13-2024,Monthly direct deposit - Salary,10327,credit,Salary,Savings
 11-14-2024,Boston Shawarma,82.72,debit,Restaurants,Credit Card
 11-14-2024,Ace Hardware,221.52,debit,Grocery shopping,Credit Card
 11-15-2024,Stop and Shop,170.21,debit,Grocery shopping,Credit Card
@@ -5852,7 +5852,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-21-2024,Market Basket,213.43,debit,Grocery shopping,Credit Card
 11-22-2024,Dominos,62.37,debit,Restaurants,Credit Card
 11-22-2024,Boston Halal,75.33,debit,Restaurants,Credit Card
-11-22-2024,Karaoke,35.1,debit,Entertainment,Credit Card
+11-22-2024,Karaoke,350.1,debit,Entertainment,Credit Card
 11-23-2024,MBTA,16.45,debit,Travel expenses,Credit Card
 11-23-2024,Credit Transaction,8.93,credit,Cashback Rewards,Savings
 11-23-2024,Trader Joes,170.21,debit,Grocery shopping,Credit Card
@@ -5876,7 +5876,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 11-29-2024,Trader Joes,192.85,debit,Grocery shopping,Credit Card
 11-29-2024,Stop and Shop,261.67,debit,Grocery shopping,Credit Card
 11-30-2024,Uber,23.72,debit,Travel expenses,Credit Card
-12-01-2024,Rent/ Mortgage,2500.0,debit,Mortgage & Rent,Savings
+12-01-2024,Rent/ Mortgage,2500,debit,Mortgage & Rent,Savings
 12-01-2024,Eversource Electricity,53.85,debit,Utilities,Checking
 12-01-2024,National Grid Gas,56.37,debit,Utilities,Checking
 12-01-2024,Heating fuel,212.25,debit,Utilities,Checking
@@ -5904,7 +5904,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-08-2024,Karaoke,69.35,debit,Entertainment,Credit Card
 12-08-2024,Credit Transaction,7.7,credit,Cashback Rewards,Savings
 12-09-2024,Market Basket,212.63,debit,Grocery shopping,Credit Card
-12-10-2024,Trader Joes,259.0,debit,Grocery shopping,Credit Card
+12-10-2024,Trader Joes,259,debit,Grocery shopping,Credit Card
 12-10-2024,Uber,23.14,debit,Travel expenses,Credit Card
 12-10-2024,Market Basket,239.75,debit,Grocery shopping,Credit Card
 12-11-2024,Mall,71.06,debit,Shopping,Credit Card
@@ -5913,7 +5913,7 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-13-2024,Temu,56.58,debit,Shopping,Credit Card
 12-13-2024,MBTA,20.45,debit,Travel expenses,Credit Card
 12-13-2024,StandUp show,29.92,debit,Entertainment,Credit Card
-12-13-2024,Monthly direct deposit - Salary,10327.0,credit,Salary,Savings
+12-13-2024,Monthly direct deposit - Salary,10327,credit,Salary,Savings
 12-13-2024,Amazon,79.81,debit,Shopping,Credit Card
 12-13-2024,Boston Halal,31.77,debit,Restaurants,Credit Card
 12-13-2024,Ace Hardware,185.76,debit,Grocery shopping,Credit Card
@@ -5974,11 +5974,11 @@ Date,Description,Amount,Transaction Type,Category,Account Name
 12-28-2024,Stop and Shop,238.06,debit,Grocery shopping,Credit Card
 12-28-2024,AMC Boston,52.25,debit,Entertainment,Credit Card
 12-28-2024,Boston Shawarma,78.57,debit,Restaurants,Credit Card
-12-29-2024,Lyft,14.45,debit,Travel expenses,Credit Card
+12-29-2024,Lyft,400.45,debit,Travel expenses,Credit Card
 12-29-2024,Amazon,47.61,debit,Shopping,Credit Card
 12-29-2024,MBTA,28.42,debit,Travel expenses,Credit Card
 12-29-2024,Credit Transaction,187.91,credit,Dividends,Savings
 12-29-2024,Boston Shawarma,75.01,debit,Restaurants,Credit Card
-12-30-2024,Mall,43.0,debit,Shopping,Credit Card
+12-30-2024,Mall,43,debit,Shopping,Credit Card
 12-31-2024,Temu,63.01,debit,Shopping,Credit Card
 12-31-2024,Dominos,26.54,debit,Restaurants,Credit Card
