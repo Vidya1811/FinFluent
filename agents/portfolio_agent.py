@@ -81,7 +81,7 @@ Give:
 - Mention if any stocks are overexposed or trending negatively
 
 In the end, include:
-"**Investments in the stock market are subject to market risks. Please perform your own research before investing.**"
+"Investments in the stock market are subject to market risks. Please perform your own research before investing."
 """
 
         analysis_input = "### User Portfolio:\n"

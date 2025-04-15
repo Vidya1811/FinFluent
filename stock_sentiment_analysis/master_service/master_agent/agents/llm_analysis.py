@@ -20,26 +20,26 @@ class AnalysisPrompt:
             Current Price is {current_price}
             Relavant News: {sources}
 
+            Note:Use plain text no bold or italics or any special characters
+
             **Example Format Response:**
             ---
             ## Stock Summary and Analysis:
+            - Company Overview: XYZ is a leading provider of [products/services], operating primarily in [industry/sector]. Recently, the company has [recent significant events]. [source][url]
+            - Financial Performance: The company reported a revenue of \$X million in the last quarter, with a profit margin of Y%. EPS was \$Z, showing an increase/decrease compared to the previous quarter. [source][url]
+            - Market Trends: The [industry/sector] is currently experiencing [describe relevant trends]. [brief analysis]. Regulatory changes such as [regulatory factors] may impact the company. [source][url]
+            - Analyst Ratings: Analysts have given the stock a rating of [rating], with a price target range of \$[low] to \$[high]. [source][url]
+            - Sentiment: Based on the current news, We can say that it is [bearish or bullish]
+            Sentiment Analysis:
 
-            - **Current Price:** $
-            - **Company Overview:** XYZ is a leading provider of [products/services], operating primarily in [industry/sector]. Recently, the company has [recent significant events]. [source][url]
-            - **Financial Performance:** The company reported a revenue of \$X million in the last quarter, with a profit margin of Y%. EPS was \$Z, showing an increase/decrease compared to the previous quarter. [source][url]
-            - **Market Trends:** The [industry/sector] is currently experiencing [describe relevant trends]. [brief analysis]. Regulatory changes such as [regulatory factors] may impact the company. [source][url]
-            - **Analyst Ratings:** Analysts have given the stock a rating of [rating], with a price target range of \$[low] to \$[high]. [source][url]
+            - Positive Sentiments: [Summary of positive sentiments]
+            - Negative Sentiments: [Summary of negative sentiments]
+            - Neutral Sentiments: [Summary of neutral sentiments]
 
-            **Sentiment Analysis:**
+            Conclusion:
 
-            - **Positive Sentiments:** [Summary of positive sentiments]
-            - **Negative Sentiments:** [Summary of negative sentiments]
-            - **Neutral Sentiments:** [Summary of neutral sentiments]
-
-            **Conclusion:**
-
-            - **Overall Sentiment:** The overall sentiment towards XYZ is [positive/negative/neutral].
-            - **Investment Recommendation:** Based on the analysis, it is recommended to [buy/hold/sell] the stock. This recommendation is supported by [key points from the analysis].
+            - Overall Sentiment: The overall sentiment towards XYZ is [positive/negative/neutral].
+            - Investment Recommendation: Based on the analysis, it is recommended to [buy/hold/sell] the stock. This recommendation is supported by [key points from the analysis].
 
             > Note: The above analysis is based on publicly available information and should not be taken as personalized investment advice.
         """.format(

@@ -29,16 +29,16 @@ st.title("💰 FinFluent - Your AI Financial Advisor")
 if "messages" not in st.session_state:
     st.session_state.messages = [{
         "role": "assistant",
-        "content": """👋 Welcome to **FinFluent**!
+        "content": """👋 Welcome to FinFluent!
 
 Here’s what I can do:
 
-🔮 **Budget Forecasting** — See where your money is headed next month  
-🚨 **Anomaly Detection** — Spot unusual or suspicious transactions  
-📈 **Stock Sentiment** — Get recent stock news and trends  
-📊 **Portfolio Review** — Analyze your current holdings
+🔮 Budget Forecasting — See where your money is headed next month  
+🚨 Anomaly Detection — Spot unusual or suspicious transactions  
+📈 Stock Sentiment — Get recent stock news and trends  
+📊 Portfolio Review — Analyze your current holdings
 
-You can also upload your own files below 👇
+You can also upload your own files.
 """
     }]
 
@@ -93,6 +93,17 @@ else:
     PORTFOLIO_DATA_PATH = DEFAULT_PORTFOLIO_PATH
 
 # ==============================
+# 🧼 Markdown sanitization helper
+# ==============================
+
+def safe_markdown(text: str) -> str:
+    return (
+        text.replace("_", "\\_")
+            .replace("*", "\\*")
+            .replace("`", "\\`")
+    )
+
+# ==============================
 # 💬 Render chat history
 # ==============================
 
@@ -101,7 +112,7 @@ st.markdown("### 💬 FinFluent Chat")
 
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
-        st.markdown(msg["content"])
+        st.markdown(safe_markdown(msg["content"]))
 
 # ==============================
 # 📤 Input + Agent routing
@@ -142,7 +153,7 @@ if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
 
     with st.chat_message("user"):
-        st.markdown(user_input)
+        st.markdown(safe_markdown(user_input))
 
     with st.chat_message("assistant"):
         if user_lower in ["exit", "quit", "back"]:
@@ -162,5 +173,5 @@ if user_input:
             except Exception as e:
                 response = f"❌ An error occurred while processing your request.\n\n```{e}```"
 
-        st.markdown(response)
+        st.markdown(safe_markdown(response))
         st.session_state.messages.append({"role": "assistant", "content": response})

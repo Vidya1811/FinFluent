@@ -48,7 +48,10 @@ def run_anomaly_agent_loop(transactions_path: str, streamlit_mode=False):
         df_debit["outlier_flag"] = model.fit_predict(df_debit[["Amount_scaled"]])
         df_debit["is_outlier"] = df_debit["outlier_flag"] == -1
 
-        outliers = df_debit[df_debit["is_outlier"]].sort_values(by="Amount", ascending=False)
+        outliers = df_debit[df_debit["is_outlier"]]
+        outliers = outliers[outliers["Category"] != "Mortgage & Rent"]
+        outliers = outliers.sort_values(by="Amount", ascending=False)
+
         if outliers.empty:
             msg = "✅ No major spending anomalies detected this month. You're all good!"
             if streamlit_mode:
